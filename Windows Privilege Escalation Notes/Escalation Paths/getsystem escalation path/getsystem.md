@@ -1,0 +1,1 @@
+<strong>getsystem path</strong>
