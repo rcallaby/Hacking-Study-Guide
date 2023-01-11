@@ -13,7 +13,7 @@ To contribute, follow these steps:
  * Create a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) of the repository. This will create a copy of the repository under your own GitHub account.
  * Make your changes in your fork. Be sure to follow the [formatting guidelines](#formatting-guidelines) outlined below. 
  * [Commit](https://github.com/git-guides/git-commit) your changes and [push](https://github.com/git-guides/git-push) them to your fork.
- * Submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to the main repository. This will notify the maintainers of the repository and allow them to review and potentially merge your changes.
+ * Submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to the main repository. This will notify the maintainers of the repository and allow them to review and potentially merge your changes.
 
 ## Formatting Guidelines
 
