@@ -1,4 +1,4 @@
-<strong>getsystem path</strong>
+# getsystem path
 
 The getsystem escalation path is actually built into meterpreter and as such it is important to understand how to use it and how it works. Furthermore, understanding how all of these escalation techniques work is really important because from these you can gain an understanding on how to find and create new escalation paths from potential vulnerabilties in Windows or Linux, or even OS X, and so on.
 
