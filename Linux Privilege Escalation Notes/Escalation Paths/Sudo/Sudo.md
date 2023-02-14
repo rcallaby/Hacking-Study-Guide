@@ -1,2 +1,2 @@
-<strong>Sudo Escalation Path</strong>
+# Sudo Escalation Path
 

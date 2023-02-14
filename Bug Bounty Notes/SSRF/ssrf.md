@@ -13,3 +13,17 @@ Once a SSRF vulnerability has been identified, the penetration tester should ass
 To prevent SSRF vulnerabilities, it is important to properly validate and sanitize user-supplied data, and to restrict the use of untrusted data when making requests to external resources. Additionally, organizations should implement security controls, such as firewalls, to limit access to internal resources, and regularly monitor and test their applications for potential security issues.
 
 SSRF is a serious vulnerability that can have significant impact to an organization's security. As a penetration tester, it is important to be aware of the potential for SSRF and to test for these vulnerabilities as part of a comprehensive security assessment.
+
+## Top Tools used to detect and exploit SSRF
+
+SSRFire - Automated SSRF Finder it can also find XSS and open redirects
+httprebind - Automatic tool for DNS rebinding
+ssrf-sheriff - SSRF Testing written in Go
+B-XSSRF - It can detect and keep track of blind XSS, XXE, and SSRF
+ssrfDetector - It does what it is named after it detects SSRF
+sentrySSRF - Searches sentry config to check blind SSRF
+whonow - This is a malicious DNS server for executing DNS Rebinding attacks on the fly
+dref - DNS Rebinding tool and framework
+rbndr - It is a simple DNS Rebinding Tool
+dnsFookup - DNS Rebinding Toolkit
+

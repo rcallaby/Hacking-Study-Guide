@@ -1,4 +1,4 @@
-<strong>Passwords and File Permissions</strong>
+# Passwords and File Permissions
 
 First I would check the history of the commands run. So, just run the history command to see what has been typed in beforehand.
 

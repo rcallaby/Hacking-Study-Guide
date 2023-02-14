@@ -1,4 +1,4 @@
-<strong>Introduction</strong>
+# Introduction
 
 These are my personal notes that I will keep when studying for various certifications such as the OSCP, PNTP, among other Penetration Testing certifications.
 
