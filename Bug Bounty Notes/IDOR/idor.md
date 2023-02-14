@@ -17,3 +17,7 @@ Imagine a web application that displays information about employees, including t
 In a secure application, the application would verify that the user is authorized to access this information before displaying it. However, in an application with an IDOR vulnerability, the authorization check is missing, and any user can access the information for any employee simply by changing the ID parameter in the URL. For example, if a user changes the URL to "https://example.com/employee?id=456", they could access the information for another employee without proper authentication.
 
 This vulnerability could allow an attacker to access sensitive information, such as the salary and job title of other employees, and potentially use that information for malicious purposes. To mitigate this vulnerability, the application should implement proper authorization checks, such as verifying that the user is authorized to access the information for the specified employee ID before displaying it.
+
+## Tools to detect and exploit IDOR
+
+Autorize - This is an extension for burpsuite
