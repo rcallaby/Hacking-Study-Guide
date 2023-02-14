@@ -1,4 +1,4 @@
-<strong>Passwords and Port Forwarding</strong>
+# Passwords and Port Forwarding
 
 Similar to finding passwords in Linux some of the same methods to locate passwords in Windows can also be used. This is somewhat a good thing in that the mentality of finding passwords shouldn't be too difficult if you have mastered finding passwords in Linux.
 

@@ -1,6 +1,6 @@
-<strong>The Tools</strong>
+# The Tools
 
-Below you will find some of the automated tools to escalate Windows.
+## Below you will find some of the automated tools to escalate Windows.
 
 For Powershell you have the following:
     sherlock.ps1
