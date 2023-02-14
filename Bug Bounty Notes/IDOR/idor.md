@@ -21,3 +21,4 @@ This vulnerability could allow an attacker to access sensitive information, such
 ## Tools to detect and exploit IDOR
 
 Autorize - This is an extension for burpsuite
+
