@@ -17,4 +17,17 @@ Use automated tools: Automated tools such as Burp Suite or OWASP ZAP can also be
 Once you have identified a potential XSS vulnerability, it is important to report it to the website's owner and provide detailed information about the vulnerability, including steps to reproduce it. The website owner can then take steps to fix the vulnerability and ensure the security of the web application.
 
 ## Tools for testing XSS vulnerabilities
+XSStrike - A very advanced XSS scanner
+xsson2 - XSS implemented with JavaScript
+XSpear - A tool for scanning XSS Scanning Tool in Go
+ground-control - A collection of scripts for debugging SSRF and blind XSS
+xssValidator - Burp intruder extender that automates and validates XSS vulnerabilities
+JSShell - A Multi-User Web JS Shell
+XSSRadar - A tool for that detects parameters and fuzzes themm for Cross Site Scripting Vulnerabilities
+B-XSSRF - A toolkit and keep track of blind XSS, SSRF, and XXRE
+domxssscanner - A tool that scans the DOM for XSS vulnerabilities
+xss-flare - An XSS scanner for cloudflare serverless workers
+xss2png - PNG IDAT chunks XSS payload generator
+XSSwagger - A Swagger-ui that detects old versions that are vulnerable to XSS attacks
+
 
