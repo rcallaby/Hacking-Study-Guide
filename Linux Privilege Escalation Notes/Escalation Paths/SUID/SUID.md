@@ -15,4 +15,5 @@ Post-exploitation: Once privileges have been escalated, the attacker can carry o
 It's worth noting that SUID escalation is not always possible or practical, as it requires finding a vulnerable SUID binary and successfully exploiting it. However, it is still an important technique to be aware of as a penetration tester, as it can provide a significant advantage in gaining access to a system.
 
 ## Tools for SUID Escalation in Linux
+[GTFOBins](https://gtfobins.github.io/) - Not really a tool but a website where you can find many of the sudo escalation paths
 
