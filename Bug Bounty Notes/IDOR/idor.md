@@ -20,5 +20,5 @@ This vulnerability could allow an attacker to access sensitive information, such
 
 ## Tools to detect and exploit IDOR
 
-Autorize - This is an extension for burpsuite
+[Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - This is an extension for burpsuite
 

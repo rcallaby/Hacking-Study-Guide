@@ -17,3 +17,11 @@ Once a SQL injection vulnerability has been identified, a bug bounty hunter can 
 It's important to note that SQL injection vulnerabilities can be prevented by properly sanitizing user input and using prepared statements with parameterized queries. However, many applications still contain these vulnerabilities, which is why they are a popular target for bug bounty hunters.
 
 ## Tools to help find SQL Injection Vulnerabilities
+* [sqlmap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL Injection and Database takeover tool
+* [NoSQLMap](https://github.com/codingo/NoSQLMap) - Automated NoSQL database enumeration and web app exploit tool
+* [SQLiScanner](https://github.com/0xbug/SQLiScanner) - This is an automatic SQL Injection with sqlmap api
+* [sqli-hunter](https://github.com/zt2/sqli-hunter) - It is a simple HTTP/HTTPS proxy server that helps in finding SQL Injections
+* [waybacksqlscanner](https://github.com/ghostlulzhacks/waybackSqliScanner) - This gathers urls from the wayback machine then tests for sql injection using the GET parameter
+* [burp-to-sqlmap](https://github.com/Miladkhoshdel/burp-to-sqlmap) - This performs SQLInjection test on Burp Suite Bulk Requests using SQLMap
+* [andor](https://github.com/sadicann/andor) - Blind SQL Injection tool written in Golang
+* [nosqli](https://github.com/Charlie-belmer/nosqli) - NoSql Injection Command Line Tool that finds websites using MongoDB
