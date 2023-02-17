@@ -16,14 +16,14 @@ SSRF is a serious vulnerability that can have significant impact to an organizat
 
 ## Top Tools used to detect and exploit SSRF
 
-SSRFire - Automated SSRF Finder it can also find XSS and open redirects
-httprebind - Automatic tool for DNS rebinding
-ssrf-sheriff - SSRF Testing written in Go
-B-XSSRF - It can detect and keep track of blind XSS, XXE, and SSRF
-ssrfDetector - It does what it is named after it detects SSRF
-sentrySSRF - Searches sentry config to check blind SSRF
-whonow - This is a malicious DNS server for executing DNS Rebinding attacks on the fly
-dref - DNS Rebinding tool and framework
-rbndr - It is a simple DNS Rebinding Tool
-dnsFookup - DNS Rebinding Toolkit
+* [SSRFire](https://github.com/ksharinarayanan/SSRFire) - Automated SSRF Finder it can also find XSS and open redirects
+* [httprebind](https://github.com/daeken/httprebind) - Automatic tool for DNS rebinding
+* [ssrf-sheriff](https://github.com/teknogeek/ssrf-sheriff) - SSRF Testing written in Go
+* [B-XSSRF](https://github.com/SpiderMate/B-XSSRF) - It can detect and keep track of blind XSS, XXE, and SSRF
+* [ssrfDetector](https://github.com/JacobReynolds/ssrfDetector) - It does what it is named after it detects SSRF
+* [sentrySSRF](https://github.com/xawdxawdx/sentrySSRF) - Searches sentry config to check blind SSRF
+* [whonow](https://github.com/brannondorsey/whonow) - This is a malicious DNS server for executing DNS Rebinding attacks on the fly
+* [dref](https://github.com/FSecureLABS/dref) - DNS Rebinding tool and framework
+* [rbndr](https://github.com/taviso/rbndr) - It is a simple DNS Rebinding Tool
+* [dnsFookup](https://github.com/makuga01/dnsFookup) - DNS Rebinding Toolkit
 
