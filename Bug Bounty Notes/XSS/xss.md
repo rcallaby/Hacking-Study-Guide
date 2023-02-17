@@ -17,17 +17,17 @@ Use automated tools: Automated tools such as Burp Suite or OWASP ZAP can also be
 Once you have identified a potential XSS vulnerability, it is important to report it to the website's owner and provide detailed information about the vulnerability, including steps to reproduce it. The website owner can then take steps to fix the vulnerability and ensure the security of the web application.
 
 ## Tools for testing XSS vulnerabilities
-XSStrike - A very advanced XSS scanner
-xsson2 - XSS implemented with JavaScript
-XSpear - A tool for scanning XSS Scanning Tool in Go
-ground-control - A collection of scripts for debugging SSRF and blind XSS
-xssValidator - Burp intruder extender that automates and validates XSS vulnerabilities
-JSShell - A Multi-User Web JS Shell
-XSSRadar - A tool for that detects parameters and fuzzes themm for Cross Site Scripting Vulnerabilities
-B-XSSRF - A toolkit and keep track of blind XSS, SSRF, and XXRE
-domxssscanner - A tool that scans the DOM for XSS vulnerabilities
-xss-flare - An XSS scanner for cloudflare serverless workers
-xss2png - PNG IDAT chunks XSS payload generator
-XSSwagger - A Swagger-ui that detects old versions that are vulnerable to XSS attacks
+* [XSStrike](https://github.com/s0md3v/XSStrike) - A very advanced XSS scanner
+* [xsson2](https://github.com/evilcos/xssor2) - XSS implemented with JavaScript
+* [XSpear](https://github.com/hahwul/XSpear) - A tool for scanning XSS Scanning Tool in Go
+* [ground-control](https://github.com/jobertabma/ground-control) - A collection of scripts for debugging SSRF and blind XSS
+* [xssValidator](https://github.com/nVisium/xssValidator) - Burp intruder extender that automates and validates XSS vulnerabilities
+* [JSShell](https://github.com/Den1al/JSShell) - A Multi-User Web JS Shell
+* [XSSRadar](https://github.com/bugbountyforum/XSS-Radar) - A tool for that detects parameters and fuzzes themm for Cross Site Scripting Vulnerabilities
+* [B-XSSRF](https://github.com/SpiderMate/B-XSSRF) - A toolkit and keep track of blind XSS, SSRF, and XXRE
+* [domxssscanner](https://github.com/yaph/domxssscanner) - A tool that scans the DOM for XSS vulnerabilities
+* [xss-flare](https://github.com/EgeBalci/xss-flare) - An XSS scanner for cloudflare serverless workers
+* [xss2png](https://github.com/vavkamil/xss2png) - PNG IDAT chunks XSS payload generator
+* [XSSwagger](https://github.com/vavkamil/XSSwagger) - A Swagger-ui that detects old versions that are vulnerable to XSS attacks
 
 
