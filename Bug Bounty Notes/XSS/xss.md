@@ -30,4 +30,9 @@ Once you have identified a potential XSS vulnerability, it is important to repor
 * [xss2png](https://github.com/vavkamil/xss2png) - PNG IDAT chunks XSS payload generator
 * [XSSwagger](https://github.com/vavkamil/XSSwagger) - A Swagger-ui that detects old versions that are vulnerable to XSS attacks
 
+## Good Tutorials on XSS
+[reflected XSS](https://portswigger.net/web-security/cross-site-scripting/reflected) - A pretty good tutorial by PortSwigger
+[Complete Cross-site Scripting Walkthrough](https://www.exploit-db.com/docs/english/18895-complete-cross-site-scripting-walkthrough.pdf) - A good step by step walkthrough of XSS
+[Cross-Site Scripting (XSS) Cheatsheet and Tutorial](https://hackersonlineclub.com/cross-site-scripting-xss/) - A good cheatsheet to reference while learning
+
 
