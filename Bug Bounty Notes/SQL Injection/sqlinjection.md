@@ -27,3 +27,7 @@ It's important to note that SQL injection vulnerabilities can be prevented by pr
 * [nosqli](https://github.com/Charlie-belmer/nosqli) - NoSql Injection Command Line Tool that finds websites using MongoDB
 
 ## Good Tutorials for SQL Injection
+* [What is SQL Injection? Tutorial and Examples](https://portswigger.net/web-security/sql-injection) - A tutorial from PortSwigger
+* [SQL Injection Tutorial: Learn with Example](https://www.guru99.com/learn-sql-injection-with-practical-example.html) - A pretty good overview of SQL Injection by Guru99
+* [SQL Injection - W3 Schools](https://www.w3schools.com/sql/sql_injection.asp) - An overview of SQL Injection by W3Schools
+* [SQL Injection Tutorial](https://hackertarget.com/sql-injection/) - A tutorial that is pretty good by Hacker Target
