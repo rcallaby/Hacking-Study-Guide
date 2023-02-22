@@ -37,7 +37,10 @@ As well, you want to see what services are running by using the following comman
 As well, you can narrow down the services by the user or service by using the following:
 ```
     ps aux | grep <username>
+
 ```
+
+## Tools for Linux System Enumeration
 
 
 

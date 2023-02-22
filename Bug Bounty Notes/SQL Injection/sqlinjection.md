@@ -25,3 +25,5 @@ It's important to note that SQL injection vulnerabilities can be prevented by pr
 * [burp-to-sqlmap](https://github.com/Miladkhoshdel/burp-to-sqlmap) - This performs SQLInjection test on Burp Suite Bulk Requests using SQLMap
 * [andor](https://github.com/sadicann/andor) - Blind SQL Injection tool written in Golang
 * [nosqli](https://github.com/Charlie-belmer/nosqli) - NoSql Injection Command Line Tool that finds websites using MongoDB
+
+## Good Tutorials for SQL Injection
