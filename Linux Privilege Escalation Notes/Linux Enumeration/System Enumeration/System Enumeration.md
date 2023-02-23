@@ -41,7 +41,11 @@ As well, you can narrow down the services by the user or service by using the fo
 ```
 
 ## Tools for Linux System Enumeration
-
-
+* [LinEnum](https://github.com/rebootuser/LinEnum) - One of the most used tools for Linux Enumeration 
+* [linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration) - A robust Linux Enumeration tool
+* [SUID3NUM](https://github.com/Anon-Exploiter/SUID3NUM) - A Linux Enumeration tool that is designed to find all the SUID binaries
+* [uptux](https://github.com/initstring/uptux) - specialized escalation checks for Linux
+* [SPARTA](https://github.com/SECFORCE/sparta) - A GUI tool for scanning computers on the network or remote
+* [Linux Exploit Suggester](https://github.com/The-Z-Labs/linux-exploit-suggester) - A tool that will find potential exploits and suggests ways to use them
 
  
