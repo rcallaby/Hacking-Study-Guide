@@ -1,4 +1,4 @@
-<strong>System Enumeration</strong>
+# System Enumeration
 
 This is a part of more enumeration once you have a user shell.
 
@@ -47,5 +47,12 @@ As well, you can narrow down the services by the user or service by using the fo
 * [uptux](https://github.com/initstring/uptux) - specialized escalation checks for Linux
 * [SPARTA](https://github.com/SECFORCE/sparta) - A GUI tool for scanning computers on the network or remote
 * [Linux Exploit Suggester](https://github.com/The-Z-Labs/linux-exploit-suggester) - A tool that will find potential exploits and suggests ways to use them
+
+## Tutorials for Linux System Enumeration
+* [Linux Operating System Enumeration - Hacking Tutorial](https://www.hacking-tutorial.com/hacking-tutorial/linux-operating-system-enumeration/) - A tutorial on Linux Enumeration 
+* [Ethical Hacking - Enumeration](https://www.tutorialspoint.com/ethical_hacking/ethical_hacking_enumeration.htm) - A tutorial made by Tutorialspoint
+* [Linux Enumeration Cheat Sheet](https://cyberlab.pacific.edu/resources/linux-enumeration-cheat-sheet) - A Cheat Sheet by the University of the Pacific
+* [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/) - A good overview of how to perform Linux Privilege Escalation with enumeration aa a part of it
+
 
  
