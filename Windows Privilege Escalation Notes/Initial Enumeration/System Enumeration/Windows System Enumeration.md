@@ -1,4 +1,4 @@
-<strong>Windows System Enumeration</strong>
+# Windows System Enumeration
 
 To start you would like at system archeitecture, the hostname, the drives, and so on. The more information you can obtain the better.
 

@@ -31,3 +31,5 @@ Back in the Permissions dialog box, select the user or group that you just added
 Once you've made these changes, click "OK" to close the Permissions dialog box. You should now be able to make the change to the registry key.
 
 If you still can't make the change even after getting administrative permissions, you might need to use other methods of escalation, such as running a command prompt as an administrator, using third-party tools, or modifying group policies. However, these methods can be more complex and should be used with caution.
+
+## Tools for Registry Escalation Path
