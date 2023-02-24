@@ -9,3 +9,13 @@ The attacker can use this technique to escalate their privileges by hijacking a 
 An ethical hacker could use this technique as a means of testing the security of a system and determining the extent to which it is vulnerable to attack. By demonstrating how an attacker could use DLL hijacking to escalate their privileges, the ethical hacker could help organizations to understand the risks and take steps to reduce them.
 
 ## Tools for DLL Hijacking
+* [JAWS - Just Another Windows Enum Script](https://github.com/411Hall/JAWS) - A powershell script
+* [juicy-potato](https://github.com/ohpe/juicy-potato) - A sugared version of RottenPotatoNG with some extras
+* [potato](https://github.com/foxglovesec/Potato) - Potato Privilege Escalation for Windows 7,8,19 and Server 2008 & 2012
+* [PrivescCheck](https://github.com/itm4n/PrivescCheck) -This enumerates common Windows misconfigurations for privilege escalation
+* [SessionGopher](https://github.com/Arvanaghi/SessionGopher) - This is a powershell scripts that finds saved session information for remote access tools
+* [Sherlock](https://github.com/rasta-mouse/Sherlock/) - A Powershell script to find missing software patches for local privilege escalation
+* [Spartacus](https://github.com/Accenture/Spartacus) - A tool to find DLL Hijacking targets on a local machine
+* [Watson](https://github.com/rasta-mouse/Watson) - A .Net tool that finds missing KBs to find exploits for Privilege Escalation vulnerabilities
+
+
