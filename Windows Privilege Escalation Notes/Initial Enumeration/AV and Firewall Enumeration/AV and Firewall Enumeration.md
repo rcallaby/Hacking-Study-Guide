@@ -1,4 +1,4 @@
-<strong>AV and Firewall Enumeration</strong>
+# AV and Firewall Enumeration
 
 When doing CTF's or any type of real world penetratino testing finding and enumerating the various anti-virus and firewalls that may be present should be a good idea. You will want to learn this not only for the harder machines but also for real world penetration testing.
 

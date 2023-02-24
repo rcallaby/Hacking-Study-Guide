@@ -1,4 +1,4 @@
-<strong>Network Enumeration</strong>
+# Network Enumeration
 
 Doing a network enumeration is necessary as you can determine what other systems or networks this computer may be connected to. By doing a enumeration you can determine if you should be able to pivot to a different machine or to see if there may be more vulnerablities on the network.
 

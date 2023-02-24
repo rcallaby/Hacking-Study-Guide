@@ -1,4 +1,4 @@
-<strong>User Enumeration</strong>
+# User Enumeration
 
 When gaining a foothold on a machine it is very important to enumerate the users that you can find on the machine. You can determine who may have admin privileges and those who don't. Before attempting to escalate it is important to figure out who is there and what roles they may have.
 
