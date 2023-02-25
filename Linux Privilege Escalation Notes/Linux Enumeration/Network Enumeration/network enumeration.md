@@ -1,4 +1,4 @@
-<strong>Network Enumeration</strong>
+# Network Enumeration
 
 This is really important. It helps us understaand what open ports that are open internally, and some other tools or programs that may be available to us to allow us to enumerate more.
 

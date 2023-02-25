@@ -1,4 +1,4 @@
-<strong>User Enumeration</strong>
+# User Enumeration
 
 User enumeration helps to find out what permissions we may have and what we may not have. The idea is obviously try and get more permissions so that we can gain root access or super user access to the box.
 

@@ -20,11 +20,11 @@ This vulnerability could allow an attacker to access sensitive information, such
 
 ## Tools to detect and exploit IDOR
 
-[Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - This is an extension for burpsuite
+* [Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - This is an extension for burpsuite
 
 ## Great IDOR Tutorials to Study
-[Insecure Direct Object References](https://portswigger.net/web-security/access-control/idor) - A good tutorial from PortSwigger
-[IDOR Hands On](https://thehackerish.com/idor-tutorial-hands-on-owasp-top-10-training/) - A OWASP Hands on Tutorial for IDOR
-[How To Hunt IDOR](https://github.com/KathanP19/HowToHunt/blob/master/IDOR/IDOR.md) - A great github resource on how to hunt down IDOR with many examples
-[Insecure Direct Object References](https://www.google.com/search?client=firefox-b-1-d&q=IDOR+Tutorials#ip=1) - A pretty good overview by Tutorialspoint
+* [Insecure Direct Object References](https://portswigger.net/web-security/access-control/idor) - A good tutorial from PortSwigger
+* [IDOR Hands On](https://thehackerish.com/idor-tutorial-hands-on-owasp-top-10-training/) - A OWASP Hands on Tutorial for IDOR
+* [How To Hunt IDOR](https://github.com/KathanP19/HowToHunt/blob/master/IDOR/IDOR.md) - A great github resource on how to hunt down IDOR with many examples
+* [Insecure Direct Object References](https://www.google.com/search?client=firefox-b-1-d&q=IDOR+Tutorials#ip=1) - A pretty good overview by Tutorialspoint
 

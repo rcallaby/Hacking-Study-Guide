@@ -1,4 +1,4 @@
-<strong>Password Hunting</strong>
+# Password Hunting
 
 Obviously finding passwords is crucial to actually gaining additional privileges in Linux. The following is some techniques for finding passwords using Linux. Of course, not all of these techniques work all the time but I would get into the habit of at least trying these techniques with each penetration test to make sure that these vulnerabilities aren't present.
 
