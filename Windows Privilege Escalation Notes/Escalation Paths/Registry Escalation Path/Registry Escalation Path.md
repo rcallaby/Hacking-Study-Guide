@@ -33,3 +33,9 @@ Once you've made these changes, click "OK" to close the Permissions dialog box. 
 If you still can't make the change even after getting administrative permissions, you might need to use other methods of escalation, such as running a command prompt as an administrator, using third-party tools, or modifying group policies. However, these methods can be more complex and should be used with caution.
 
 ## Tools for Registry Escalation Path
+
+[PowerSploit](https://github.com/PowerShellMafia/PowerSploit) - A collection of powershell modules that can be used to perform a variety of tasks
+[MetaSploit](https://www.metasploit.com/) - Probably the most mentioned and widely used tool for penetration testing
+[RegDelNull](https://learn.microsoft.com/en-us/sysinternals/downloads/regdelnull) - A windows command line utility that searches for and allows you to delete Registry Keys
+[RegShot](https://github.com/Seabreg/Regshot) - This is a small free and open source registry compare utility that can make a snapshot of your registry
+[regedit](https://beebom.com/best-registry-hacks-windows-11/) - This is the built in Windows tool that can be used to modify, view, and edit the registry
