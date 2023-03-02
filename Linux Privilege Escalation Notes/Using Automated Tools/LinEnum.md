@@ -53,7 +53,7 @@ LinEnum is a powerful tool for system enumeration on Linux systems. By automatin
 
 + LinEnum will start running and display the results on the screen. The results will include information such as the operating system version, installed software packages, running processes, network configuration, and user accounts.
 
-+Review the results carefully to identify potential vulnerabilities or security issues. LinEnum will highlight any potential security risks or misconfigurations it finds.
+Review the results carefully to identify potential vulnerabilities or security issues. LinEnum will highlight any potential security risks or misconfigurations it finds.
 
 + Take appropriate action to address any security issues identified by LinEnum. For example, you may need to update software packages, close unnecessary network ports, or revoke unnecessary user accounts.
 
