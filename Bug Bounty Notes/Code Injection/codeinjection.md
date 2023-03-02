@@ -18,3 +18,14 @@ For example, an attacker can inject a malicious code into a web application to s
 Overall, code injection is a powerful technique used by attackers to exploit vulnerabilities in software applications. It is important for developers to build secure applications that are resistant to code injection attacks, and for organizations to perform regular penetration testing to identify and remediate any security weaknesses.
 
 ## Tools for Code Injection
+[commix](https://github.com/commixproject/commix) - An all in one command injection penetration testing tool
+[Burp Suite](https://portswigger.net/burp) - You can use the popular website penetration testing tool for command injection as well 
+[SQLMap](https://github.com/sqlmapproject/sqlmap) - A Automatic SQL Injection and Database takeover tool
+[jSQL Injection](https://github.com/ron190/jsql-injection) - A java application for automatic SQL Database injection
+[BBQSQL](https://manpages.ubuntu.com/manpages/focal/en/man1/bbqsql.1.html) - This is a blind SQL injection framework written in Python
+[NoSQLMap](https://github.com/codingo/NoSQLMap) - An automated NoSQL database enumeration and web exploitation tool
+[DSSS](https://github.com/stamparm/DSSS) - Darn Small SQLi Scanner
+[Explo] - A human readable and machine readable web vulnarability testing format
+[Blind-SQL-Bitshifting](https://github.com/awnumar/blind-sql-bitshifting) - A module that performs blind SQL injection by using the bitshifting method
+
+
