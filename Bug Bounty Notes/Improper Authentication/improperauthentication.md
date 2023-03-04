@@ -15,3 +15,6 @@ Session hijacking: When a system does not properly protect user sessions, an att
 Insecure password recovery: If a system allows users to recover their passwords through an insecure method, such as by answering security questions that can be easily guessed or found online, it can be vulnerable to attacks.
 
 During a penetration testing engagement, testers will attempt to exploit these types of vulnerabilities to determine if the system can be easily compromised. The goal is to identify these issues before attackers can find and exploit them.
+
+## Tools for Improper Authentication
+

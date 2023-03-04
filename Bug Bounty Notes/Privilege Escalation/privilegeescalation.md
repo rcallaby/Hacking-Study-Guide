@@ -19,3 +19,5 @@ A bug bounty hunter discovered a vulnerability in the Uber app that allowed them
 A bug bounty hunter discovered a vulnerability in a popular virtualization software that allowed them to execute code with root-level privileges on a host machine. This vulnerability was a full privilege escalation vulnerability.
 
 Privilege escalation vulnerabilities are a critical component of bug bounty hunting, as they allow an attacker to gain higher levels of access or privilege within a system or application. Bug bounty hunters look for these vulnerabilities by analyzing the code, configuration, and behavior of applications and systems.
+
+## Tools for Privilege Escalation

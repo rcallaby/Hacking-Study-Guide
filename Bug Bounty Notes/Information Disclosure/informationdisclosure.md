@@ -23,3 +23,5 @@ Fuzzing: This involves sending a large number of random inputs to an application
 Log Analysis: By analyzing server logs and error messages, it may be possible to identify vulnerabilities, such as improper error handling or directory traversal.
 
 In summary, information disclosure vulnerabilities can manifest themselves in various ways, and it's essential to use a combination of manual and automated techniques to detect them during penetration testing.
+
+## Tools for Information Disclosure
