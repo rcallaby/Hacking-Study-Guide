@@ -28,4 +28,6 @@ Overall, code injection is a powerful technique used by attackers to exploit vul
 [Explo] - A human readable and machine readable web vulnarability testing format
 [Blind-SQL-Bitshifting](https://github.com/awnumar/blind-sql-bitshifting) - A module that performs blind SQL injection by using the bitshifting method
 
+## Tutorials for Code Injection
+
 

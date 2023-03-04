@@ -29,3 +29,5 @@ Automated Scanning: There are many tools available that can automate the process
 Code Analysis: Another effective technique for finding RCE vulnerabilities is to perform a code analysis of the application. This involves examining the source code for vulnerabilities, looking for areas where user input is accepted and not properly validated or sanitized.
 
 Overall, RCE vulnerabilities can be highly critical, allowing attackers to gain complete control over a target system remotely. Penetration testers and bug bounty hunters should be familiar with the various techniques and tools used to identify these vulnerabilities, as well as the methods used to exploit them. By staying up to date with the latest security trends and techniques, testers can help ensure that web applications remain secure and protected against malicious attacks.
+
+## Tools for RCE Conditions

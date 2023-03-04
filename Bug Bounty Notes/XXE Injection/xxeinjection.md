@@ -31,3 +31,6 @@ OWASP Zed Attack Proxy (ZAP): ZAP is an open-source web application security tes
 XMLQuire: XMLQuire is a standalone tool that can be used to test for XXE Injection vulnerabilities. It includes features like syntax highlighting, auto-completion, and validation.
 
 XXE Injection is a common vulnerability in web applications that can lead to serious security issues. Bug bounty hunters and penetration testers can use various techniques and tools to find XXE Injection vulnerabilities. It is important to perform proper validation of XML input to prevent XXE Injection vulnerabilities from occurring. By using the techniques and tools discussed in this article, security professionals can help to identify and mitigate XXE Injection vulnerabilities.
+
+
+## Tools for XXE Injection
