@@ -31,3 +31,9 @@ Code Analysis: Another effective technique for finding RCE vulnerabilities is to
 Overall, RCE vulnerabilities can be highly critical, allowing attackers to gain complete control over a target system remotely. Penetration testers and bug bounty hunters should be familiar with the various techniques and tools used to identify these vulnerabilities, as well as the methods used to exploit them. By staying up to date with the latest security trends and techniques, testers can help ensure that web applications remain secure and protected against malicious attacks.
 
 ## Tools for RCE Conditions
+[bane](https://github.com/AlaBouali/bane) = python module that contains functions and classes that are used to test the security of web/network applications
+Burp Suite
+[0wned](https://github.com/mschwager/0wned) - Code execution via Python package installation
+[remote-code-runner](https://github.com/michaelliao/remote-code-runner) - A remote code running service
+[rce-agent](https://github.com/square/rce-agent) - A gRPC based Remote Command Execution Agent
+[presshell](https://github.com/scheatkode/presshell) - Get a command shell from a wordpress website

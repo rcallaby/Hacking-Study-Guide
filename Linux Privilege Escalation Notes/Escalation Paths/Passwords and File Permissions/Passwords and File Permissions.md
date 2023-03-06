@@ -47,7 +47,14 @@ While providing a comprehensive guide on both passwords and port forwarding woul
 + Report findings: Compile a report of the vulnerabilities identified and provide recommendations for remediation.
 
 ## Tools for Passwords
-JackTheRipper
+[JackTheRipper](https://github.com/openwall/john) - A pretty complex and sophisisticated password cracking program that is open source.
+Hydra
+Cain & Abel
+Ophcrack
+Hashcat
 
 ## Tools for File Permissions
+Linux Exploit Suggester
+LinPEAS
+LinEnum
 
