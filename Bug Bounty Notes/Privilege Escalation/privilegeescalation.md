@@ -21,3 +21,5 @@ A bug bounty hunter discovered a vulnerability in a popular virtualization softw
 Privilege escalation vulnerabilities are a critical component of bug bounty hunting, as they allow an attacker to gain higher levels of access or privilege within a system or application. Bug bounty hunters look for these vulnerabilities by analyzing the code, configuration, and behavior of applications and systems.
 
 ## Tools for Privilege Escalation
+Burp Suite - When it comes to bug bounty one of the best tools you can rely on is Burp Suite
+OWASP ZAP - An open source and free version that is similar in nature to burp suite

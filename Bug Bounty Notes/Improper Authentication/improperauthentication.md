@@ -17,4 +17,11 @@ Insecure password recovery: If a system allows users to recover their passwords 
 During a penetration testing engagement, testers will attempt to exploit these types of vulnerabilities to determine if the system can be easily compromised. The goal is to identify these issues before attackers can find and exploit them.
 
 ## Tools for Improper Authentication
+* [BruteX](https://github.com/1N3/BruteX) - brute force services on a target
+* [patator](https://github.com/lanjelot/patator) - Multi brute forcer with a flexble usage
+* [thc-hydra](https://github.com/vanhauser-thc/thc-hydra) - a login cracker that can support numerous protocols
+* [DefaultCreds-cheat-sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) - This is as you can imagine it a cheatsheet for various programs and devices
+* [changeme](https://github.com/ztgrace/changeme) - A default credential scanner
+* [Burp Suite](https://portswigger.net/burp) - One of the most comphrensive tools you can use, it incorporates many features you will need in just one tool
 
+## Tutorials for Improper Authentication
