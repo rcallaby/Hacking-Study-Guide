@@ -35,4 +35,6 @@ Once you have identified a potential XSS vulnerability, it is important to repor
 * [Complete Cross-site Scripting Walkthrough](https://www.exploit-db.com/docs/english/18895-complete-cross-site-scripting-walkthrough.pdf) - A good step by step walkthrough of XSS
 * [Cross-Site Scripting (XSS) Cheatsheet and Tutorial](https://hackersonlineclub.com/cross-site-scripting-xss/) - A good cheatsheet to reference while learning
 
+## XSS Payloads
+
 

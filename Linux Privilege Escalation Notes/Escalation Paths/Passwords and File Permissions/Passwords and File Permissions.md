@@ -48,13 +48,13 @@ While providing a comprehensive guide on both passwords and port forwarding woul
 
 ## Tools for Passwords
 [JackTheRipper](https://github.com/openwall/john) - A pretty complex and sophisisticated password cracking program that is open source.
-Hydra
-Cain & Abel
-Ophcrack
-Hashcat
+[Hydra](https://github.com/vanhauser-thc/thc-hydra) - One of the best tools for password cracking
+[Cain & Abel](https://github.com/xchwarze/Cain) - Password recovery tool 
+[Ophcrack](https://github.com/luisgg/ophcrack) - Password recovery tool
+[Hashcat](https://github.com/hashcat/hashcat) - Another good password cracking tool, can be complicated to use
 
 ## Tools for File Permissions
-Linux Exploit Suggester
-LinPEAS
-LinEnum
+[Linux Exploit Suggester 2](https://github.com/rebootuser/LinEnum) - A Next Generation Linux Kernel Exploit Suggester
+[LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) - Linux Privilege Escalation Awesome Script
+[LinEnum](https://github.com/rebootuser/LinEnum) - A local linux enumeration and privilege escalation checks
 

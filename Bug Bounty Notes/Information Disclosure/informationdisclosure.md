@@ -25,3 +25,4 @@ Log Analysis: By analyzing server logs and error messages, it may be possible to
 In summary, information disclosure vulnerabilities can manifest themselves in various ways, and it's essential to use a combination of manual and automated techniques to detect them during penetration testing.
 
 ## Tools for Information Disclosure
+The tools for information disclosure are pretty much the same as every other bug bounty tool. If you discover a S3 blog or other forms of personal data you should disclose this to the bug bounty program. Please keep in mind the scope of the bug bounty and that you don't break the rules of engagement.
