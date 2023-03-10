@@ -92,3 +92,5 @@ set PASS_FILE <password file>
 run
 ```
 Metasploit is a powerful tool that provides penetration testers with a wide range of features to identify and exploit vulnerabilities in various systems and applications. With its client-server architecture and modular design, it allows penetration testers to customize their attacks and payloads to suit their specific requirements. However, it is important to note that Metasploit should only be used by authorized security professionals for ethical and legal penetration testing purposes. Unauthorized use of Metasploit or any other hacking tool is strictly prohibited and can result in serious legal consequences.
+
+### MetaSploit CheatSheet
