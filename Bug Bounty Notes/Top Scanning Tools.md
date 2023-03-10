@@ -20,18 +20,18 @@ Below is a detailed listing of many more tools and what function they perform.
 ## Subdomain Enumeration
 + [amass](https://owasp.org/www-project-amass/)
 + [massdns](https://github.com/blechschmidt/massdns)
-+ finddomain
++ [finddomain](https://github.com/Findomain/Findomain)
 + [sudomy](https://github.com/screetsec/Sudomy)
-+ substream
-+ subra
-+ domain
++ [substr3am](https://github.com/nexxai/Substr3am)
++ [subra](https://github.com/si9int/Subra)
++ [domain](https://github.com/jhaddix/domain/)
 
 
 ## Port Scanning
 + [massscan](https://github.com/robertdavidgraham/masscan)
 + [RustScan](https://github.com/RustScan/RustScan)
 + [nmap](https://github.com/RustScan/RustScan)
-+ sandmap
++ [sandmap](https://github.com/trimstray/sandmap)
 + [ScanCannon](https://github.com/johnnyxmas/ScanCannon)
 
 ## Content Discovery
@@ -44,7 +44,7 @@ Below is a detailed listing of many more tools and what function they perform.
 ## Links
 + [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
 + [JS-Scan](https://github.com/zseano/JS-Scan)
-+ linkx
++ [linx](https://github.com/riza/linx)
 
 ## Fuzzing
 + [wfuzz]()https://github.com/xmendez/wfuzz

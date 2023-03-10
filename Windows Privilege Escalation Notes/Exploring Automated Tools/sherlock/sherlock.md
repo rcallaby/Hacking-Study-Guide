@@ -18,25 +18,25 @@ The tool works by taking a target username or handle as input and then querying 
 
 Searching for usernames on Twitter
 To search for usernames associated with a target on Twitter, you can use the following command:
-
+```
 sherlock <target_username> --twitter
-
+```
 This will search for any additional usernames associated with the target on Twitter.
 
 Searching for usernames on multiple platforms
 To search for usernames associated with a target across multiple platforms, you can use the following command:
-
+```
 sherlock <target_username>
-
+```
 This will search for any additional usernames associated with the target on multiple platforms, including Twitter, Instagram, GitHub, and many others.
 
 Searching for usernames on a specific platform
 To search for usernames associated with a target on a specific platform, you can use the following command:
-
+```
 sherlock <target_username> --<platform>
-
+```
 This will search for any additional usernames associated with the target on the specified platform. For example, to search for usernames associated with a target on GitHub, you can use the following command:
-
+```
 sherlock <target_username> --github
-
+```
 Sherlock is a powerful tool that can help penetration testers and bug bounty hunters in identifying potential vulnerabilities in web applications. The tool is designed to automate the process of finding usernames across multiple websites and platforms, making it easier for testers to perform reconnaissance on a target. By utilizing the APIs of various social media platforms and web applications, Sherlock is able to quickly search for usernames across multiple websites simultaneously. With the examples provided above, you can start using Sherlock to aid in your penetration testing and bug bounty hunting efforts.
