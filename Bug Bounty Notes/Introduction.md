@@ -17,3 +17,16 @@ Once a bug bounty program is announced, ethical hackers can begin searching for 
 The rewards offered for the discovery of vulnerabilities can vary widely, depending on the severity of the vulnerability and the company offering the bug bounty. Some companies offer monetary rewards, while others may offer recognition or other non-monetary rewards.
 
 Bug bounty hunting is an effective way for companies and organizations to identify and address vulnerabilities in their systems and software. The principle behind bug bounty hunting is to incentivize ethical hackers to find and report vulnerabilities, in exchange for a reward. This method allows companies to identify vulnerabilities that may have gone unnoticed by their internal security teams, and address them before they can be exploited by malicious actors.
+
+### Table of Contents
++ Code Injection
++ Cross Site Response Forgery
++ IDOR
++ Improper Authentication
++ Information Disclosure
++ Privilege Escalation
++ Race Condition
++ SQL Injection
++ SSRF
++ XSS
++ XXE Injection
