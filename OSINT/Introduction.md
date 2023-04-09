@@ -45,5 +45,4 @@ Here are some examples of how a penetration tester might use OSINT techniques:
 OSINT is a valuable tool for any penetration tester as it provides them with valuable intelligence on their targets. By gathering information from publicly available sources, penetration testers can identify potential vulnerabilities, weaknesses, and attack vectors. With the right tools and techniques, OSINT can be a powerful weapon in the penetration tester's arsenal.
 
 
-
-
+### Table of Contents
