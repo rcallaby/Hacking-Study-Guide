@@ -7,3 +7,6 @@ Of course, this is a work in progress and it is far from complete but over time 
 Please keep in mind that the OSCP, PNTP, and eJPT may be registered trademarks of their respective businesses. All effort is performed to respect these trademarks.
 
 ### Table of Contents
++ Escalation Paths
++ Linux Enumeration
++ Using Automaated Tools
