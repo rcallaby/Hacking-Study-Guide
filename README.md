@@ -18,7 +18,8 @@ Moreover, ethical hacking and penetration testing require a unique combination o
 Ethical hacking and penetration testing are essential disciplines for anyone interested in improving the security of their own systems, or helping organizations do so. These fields offer a wealth of opportunities for career growth, as well as personal and professional development. With the increasing threat of cyber attacks, the demand for skilled ethical hackers and penetration testers is only set to grow. So, if you're interested in cybersecurity, then studying ethical hacking and penetration testing is a great place to start.
 
 ### Table of Contents
-+ Bug Bounty Notes
++ [Bug Bounty Notes](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug%20Bounty%20Notes/Introduction.md)
+* [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB%20Walkthroughs/introduction.md)
 + Checklists
 + Linux Privilege Escalation 
 + OSINT
