@@ -18,12 +18,12 @@ Moreover, ethical hacking and penetration testing require a unique combination o
 Ethical hacking and penetration testing are essential disciplines for anyone interested in improving the security of their own systems, or helping organizations do so. These fields offer a wealth of opportunities for career growth, as well as personal and professional development. With the increasing threat of cyber attacks, the demand for skilled ethical hackers and penetration testers is only set to grow. So, if you're interested in cybersecurity, then studying ethical hacking and penetration testing is a great place to start.
 
 ### Table of Contents
-+ [Bug Bounty Notes](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug%20Bounty%20Notes/Introduction.md)
-* [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB%20Walkthroughs/introduction.md)
-+ Checklists
-+ Linux Privilege Escalation 
-+ OSINT
-+ Ports
-+ Report Outlines
-+ Tools
-+ Windows Privilege Escalation
+1. [Bug Bounty Notes](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug%20Bounty%20Notes/Introduction.md)
+2. [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB%20Walkthroughs/introduction.md)
+3. [Checklists](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/introduction.md)
+4. [Linux Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Linux%20Privilege%20Escalation%20Notes/Introduction.md) 
+5. [OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Introduction.md)
+6. [Ports](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Ports/ports.md)
+7. [Report Outlines](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Report%20Outlines/Introduction.md)
+8. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
+9. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows%20Privilege%20Escalation%20Notes/Introduction.md)
