@@ -12,13 +12,18 @@ Of course, everyone preps differently so I would recommend you take what you wis
 
 ## Medium Linux Boxes
 
+
 ## Medium Windows Boxes
+
 
 ## Hard Linux Boxes
 
+
 ## Hard Windows Boxes
 
+
 ## Insane Linux Boxes
+
 
 ## Insane Windows Boxes
 
