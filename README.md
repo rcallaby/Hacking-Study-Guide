@@ -19,7 +19,7 @@ Ethical hacking and penetration testing are essential disciplines for anyone int
 
 ### Table of Contents
 1. [Bug Bounty Notes](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty-Notes/Introduction.md)
-2. [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB-0Walkthroughs/introduction.md)
+2. [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB-Walkthroughs/introduction.md)
 3. [Checklists](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/introduction.md)
 4. [Linux Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Linux-Privilege-Escalation/Introduction.md) 
 5. [OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Introduction.md)
