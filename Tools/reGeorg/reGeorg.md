@@ -53,3 +53,4 @@ Once the user's browser establishes a connection with your reGeorg server, you c
 For example, you can use tools like proxychains or socksify to route traffic through the reGeorg proxy, gaining access to internal systems or resources.
 
 **Remember to exercise caution and always follow legal and ethical guidelines when using such tools.**
+
