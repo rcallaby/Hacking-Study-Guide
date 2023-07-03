@@ -18,16 +18,6 @@ In a secure application, the application would verify that the user is authorize
 
 This vulnerability could allow an attacker to access sensitive information, such as the salary and job title of other employees, and potentially use that information for malicious purposes. To mitigate this vulnerability, the application should implement proper authorization checks, such as verifying that the user is authorized to access the information for the specified employee ID before displaying it.
 
-## Tools to detect and exploit IDOR
-* [Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - This is an extension for burpsuite
-
-## Great IDOR Tutorials to Study
-* [Insecure Direct Object References](https://portswigger.net/web-security/access-control/idor) - A good tutorial from PortSwigger
-* [IDOR Hands On](https://thehackerish.com/idor-tutorial-hands-on-owasp-top-10-training/) - A OWASP Hands on Tutorial for IDOR
-* [How To Hunt IDOR](https://github.com/KathanP19/HowToHunt/blob/master/IDOR/IDOR.md) - A great github resource on how to hunt down IDOR with many examples
-* [Insecure Direct Object References](https://www.google.com/search?client=firefox-b-1-d&q=IDOR+Tutorials#ip=1) - A pretty good overview by Tutorialspoint
-
-
 ## IDOR (Insecure Direct Object Reference) CheatSheet
 Bypass Restrictions using parameter pollution
 Such as using the same parameter several times as the example below:
@@ -39,4 +29,16 @@ api.somewebsite.com/profile?userid=456123&userid=789123
 
 ```
 Changing the parameters and encoding them as various hashes help. Just keep trying variations to see what could work. If there is a vulnerability there it will show itself.
+
+## Tools to detect and exploit IDOR
+* [Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - This is an extension for burpsuite
+
+## Great IDOR Tutorials to Study
+* [Insecure Direct Object References](https://portswigger.net/web-security/access-control/idor) - A good tutorial from PortSwigger
+* [IDOR Hands On](https://thehackerish.com/idor-tutorial-hands-on-owasp-top-10-training/) - A OWASP Hands on Tutorial for IDOR
+* [How To Hunt IDOR](https://github.com/KathanP19/HowToHunt/blob/master/IDOR/IDOR.md) - A great github resource on how to hunt down IDOR with many examples
+* [Insecure Direct Object References](https://www.google.com/search?client=firefox-b-1-d&q=IDOR+Tutorials#ip=1) - A pretty good overview by Tutorialspoint
+
+
+
 

@@ -2,7 +2,7 @@
 
 SUID (Set User ID) is a permission bit in Linux that allows an executable file to run with the permissions of the file owner instead of the user who runs it. As a penetration tester, one of the objectives may be to escalate privileges by exploiting SUID bit.
 
-Here's a common SUID escalation path that can be used by a penetration tester:
+### Here's a common SUID escalation path that can be used by a penetration tester:
 
 Enumeration: The first step in SUID escalation is to enumerate the system and find any files with the SUID bit set. This can be done using tools such as "find" or "locate". For example, a command like "find / -perm -4000 -type f 2>/dev/null" can be used to find SUID files on the system.
 
