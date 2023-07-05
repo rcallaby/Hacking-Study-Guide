@@ -66,4 +66,5 @@ Verify that you can access those resources successfully.
 
 To terminate the sshuttle tunnel, go back to the terminal or command prompt where sshuttle is running.
 Press Ctrl+C to stop the tunneling.
-Remember to use sshuttle responsibly and ethically, ensuring that you have the necessary permissions and legal authorization before conducting any penetration testing or ethical hacking activities.
+
+**Remember to use sshuttle responsibly and ethically, ensuring that you have the necessary permissions and legal authorization before conducting any penetration testing or ethical hacking activities.**
