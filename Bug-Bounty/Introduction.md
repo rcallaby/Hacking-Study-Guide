@@ -19,14 +19,15 @@ The rewards offered for the discovery of vulnerabilities can vary widely, depend
 Bug bounty hunting is an effective way for companies and organizations to identify and address vulnerabilities in their systems and software. The principle behind bug bounty hunting is to incentivize ethical hackers to find and report vulnerabilities, in exchange for a reward. This method allows companies to identify vulnerabilities that may have gone unnoticed by their internal security teams, and address them before they can be exploited by malicious actors.
 
 ### Table of Contents
-+ Code Injection
-+ Cross Site Response Forgery
-+ IDOR
-+ Improper Authentication
-+ Information Disclosure
-+ Privilege Escalation
-+ Race Condition
-+ SQL Injection
-+ SSRF
-+ XSS
-+ XXE Injection
++ [Code Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Code%20Injection/codeinjection.md)
++ [Cross Site Response Forgery](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Cross%20Site%20Response%20Forgery/csrf.md)
++ [IDOR](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/IDOR/idor.md)
++ [Improper Authentication](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Improper%20Authentication/improperauthentication.md)
++ [Information Disclosure](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Information%20Disclosure/informationdisclosure.md)
++ [Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Privilege%20Escalation/privilegeescalation.md)
++ [Race Condition](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Race%20Condition/racecondition.md)
++ [SQL Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SQL%20Injection/sqlinjection.md)
++ [SSRF](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SSRF/ssrf.md)
+* [SSTI]
++ [XSS](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/XSS/xss.md)
++ [XXE Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/XXE%20Injection/xxeinjection.md)
