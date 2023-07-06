@@ -6,15 +6,23 @@ This will be a directory containing notes, tutorials, and other pertinent items 
 + aircrack-ng
 + Burp Suite
 * chisel
+* CMSMap
+* Fierce
+* Impacket
 + Jack The Ripper
+* Kismet-Wireless
+* Lynis
 * medusa
 * merlin
 + MetaSploit
+* Nikto
 + Nmap
 + OWASP Zap
 * reGeorg
 * Rpivot
+* Skipfish
+* sqlmap
 * Sshuttle
 * Tunna
-+ SQL Map
 + Wireshark
+* WPScan
