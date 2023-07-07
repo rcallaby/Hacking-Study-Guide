@@ -20,17 +20,17 @@ Use XXE Injection payloads: Use payloads like <!DOCTYPE foo [<!ENTITY xxe SYSTEM
 
 Check for Blind XXE Injection: In some cases, the output may not include the external entity data. This is known as Blind XXE Injection. In such cases, an attacker can check for the vulnerability by sending a request to a server they control that includes a reference to an external entity. If the server receives the request, it means that the XXE Injection vulnerability exists.
 
-Tools to Find XXE Injection Vulnerabilities
+## Tools to Find XXE Injection Vulnerabilities
 
 There are several tools that can be used to find XXE Injection vulnerabilities in web applications. Some of the popular tools are:
 
-Burp Suite: Burp Suite is a popular web application security testing tool that can be used to find XXE Injection vulnerabilities. It includes features like intercepting and modifying requests, generating payloads, and scanning for vulnerabilities.
+* Burp Suite: Burp Suite is a popular web application security testing tool that can be used to find XXE Injection vulnerabilities. It includes features like intercepting and modifying requests, generating payloads, and scanning for vulnerabilities.
 
-OWASP Zed Attack Proxy (ZAP): ZAP is an open-source web application security testing tool that can be used to find XXE Injection vulnerabilities. It includes features like intercepting and modifying requests, generating payloads, and scanning for vulnerabilities.
+* OWASP Zed Attack Proxy (ZAP): ZAP is an open-source web application security testing tool that can be used to find XXE Injection vulnerabilities. It includes features like intercepting and modifying requests, generating payloads, and scanning for vulnerabilities.
 
-XMLQuire: XMLQuire is a standalone tool that can be used to test for XXE Injection vulnerabilities. It includes features like syntax highlighting, auto-completion, and validation.
+* XMLQuire: XMLQuire is a standalone tool that can be used to test for XXE Injection vulnerabilities. It includes features like syntax highlighting, auto-completion, and validation.
 
-XXE Injection is a common vulnerability in web applications that can lead to serious security issues. Bug bounty hunters and penetration testers can use various techniques and tools to find XXE Injection vulnerabilities. It is important to perform proper validation of XML input to prevent XXE Injection vulnerabilities from occurring. By using the techniques and tools discussed in this article, security professionals can help to identify and mitigate XXE Injection vulnerabilities.
+* XXE Injection is a common vulnerability in web applications that can lead to serious security issues. Bug bounty hunters and penetration testers can use various techniques and tools to find XXE Injection vulnerabilities. It is important to perform proper validation of XML input to prevent XXE Injection vulnerabilities from occurring. By using the techniques and tools discussed in this article, security professionals can help to identify and mitigate XXE Injection vulnerabilities.
 
 
 ## Tools for XXE Injection
