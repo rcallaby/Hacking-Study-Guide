@@ -31,3 +31,5 @@ To prevent CSRF attacks, web developers can implement various measures such as u
 * [Cross Site Request Forgery](https://www.tutorialspoint.com/security_testing/cross_site_request_forgery.htm) - A tutorial by Tutorialspoint
 * [XSRF/CSRF Prevention in ASP.Net](https://learn.microsoft.com/en-us/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages) - A tutorial by Microsoft on how to prevent CSRF in ASP.Net websites
 * [Cross Site Request Forgery](https://owasp.org/www-community/attacks/csrf) - An informative guide by the OWASP foundation
+
+### Payloads for Cross Site Response Forgery

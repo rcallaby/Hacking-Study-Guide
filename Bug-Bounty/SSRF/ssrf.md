@@ -32,3 +32,5 @@ SSRF is a serious vulnerability that can have significant impact to an organizat
 * [Server Side Request Forgery in Depth](https://www.geeksforgeeks.org/server-side-request-forgery-ssrf-in-depth/) - A pretty good tutorial by GeeksforGeeks
 * [Beginner Guide To Exploit Server Sdie Request Forgery Vulnerability](https://infosecwriteups.com/exploiting-server-side-request-forgery-ssrf-vulnerability-faeb7ddf5d0e) - A pretty solid overview by inforsec write ups
 * [Server Side Request Forgery - SSRF Security Testing](https://www.hackerone.com/application-security/how-server-side-request-forgery-ssrf) - A good tutorial by HackerOne
+
+### Payloads for SSRF
