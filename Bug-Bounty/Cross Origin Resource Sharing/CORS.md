@@ -33,3 +33,7 @@ When you discover a CORS misconfiguration, it is essential to report it responsi
 
 # Conclusion:
 Cross-Origin Resource Sharing (CORS) misconfigurations pose significant security risks to web applications. As a bug bounty hunter, having a solid understanding of CORS and its potential vulnerabilities is crucial. By employing various techniques and exploiting misconfigurations, you can uncover critical security flaws, help organizations enhance their security posture, and contribute to a safer web environment. Happy hunting!
+
+### Tutorials for Cross Origin Resource Sharing
+
+### Payloads for Cross Origin Resource Sharing

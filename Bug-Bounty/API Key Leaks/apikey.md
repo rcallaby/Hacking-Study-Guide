@@ -38,3 +38,7 @@ Security Awareness: By including API key leak scenarios in penetration testing e
 
 # Conclusion:
 API key leaks pose significant risks to the security and integrity of applications and services that rely on APIs. Bug bounty hunters and penetration testers play a crucial role in identifying and mitigating these risks. By understanding the potential consequences of API key leaks and leveraging them as part of their assessments, these professionals contribute to improving the overall security posture of organizations, ultimately enhancing trust in the digital ecosystem.
+
+### Tutorials for API Key Vulnerabilities
+
+### Payloads for API Key Vulnerabilities
