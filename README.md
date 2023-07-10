@@ -25,5 +25,6 @@ Ethical hacking and penetration testing are essential disciplines for anyone int
 5. [OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Introduction.md)
 6. [Ports](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Ports/ports.md)
 7. [Report Outlines](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Report-Outlines/Introduction.md)
-8. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
-9. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows-Privilege-Escalation/Introduction.md)
+8. [Reverse Shells](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/Introduction.md)
+9. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
+10. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows-Privilege-Escalation/Introduction.md)
