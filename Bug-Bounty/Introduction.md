@@ -27,15 +27,13 @@ Bug bounty hunting is an effective way for companies and organizations to identi
 * [Cross Origin Resource Sharing](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Cross%20Origin%20Resource%20Sharing/CORS.md)
 + [Code Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Code%20Injection/codeinjection.md)
 + [Cross Site Response Forgery](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Cross%20Site%20Response%20Forgery/csrf.md)
-* [CSV Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/CSV%20Injection/CSVInjection.md)
-* [Directory Transversal](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Directory%20Transversal/directory.md)
-* [DOM Based Vulns](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/DOM%20Based%20Vulnerabilities/DOM-Based.md)
+* CSV Injection
+* DOM Based Vulns
 + [IDOR](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/IDOR/idor.md)
 + [Improper Authentication](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Improper%20Authentication/improperauthentication.md)
 + [Information Disclosure](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Information%20Disclosure/informationdisclosure.md)
-* [JWT Attacks](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/JWT%20Attacks/jwt-attacks.md)
-* [NoSQL Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/NoSQL%20Injection/nosql.md)
-* [OAuth2 Auth Vulns](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/OAuth2%20Authentication%20Vulnerabilities/OAuth.md)
+* JWT Attacks
+* OAuth2 Auth Vulns
 + [Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Privilege%20Escalation/privilegeescalation.md)
 + [Race Condition](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Race%20Condition/racecondition.md)
 + [SQL Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SQL%20Injection/sqlinjection.md)
