@@ -40,5 +40,9 @@ Security Awareness: By including API key leak scenarios in penetration testing e
 API key leaks pose significant risks to the security and integrity of applications and services that rely on APIs. Bug bounty hunters and penetration testers play a crucial role in identifying and mitigating these risks. By understanding the potential consequences of API key leaks and leveraging them as part of their assessments, these professionals contribute to improving the overall security posture of organizations, ultimately enhancing trust in the digital ecosystem.
 
 ### Tutorials for API Key Vulnerabilities
+* [Find Hidden API Keys & How to Use Them](https://community.turgensec.com/finding-hidden-api-keys-how-to-use-them/) - A good article on what this is all about
+* [MapBox API Key Documentation](https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/) - Exactly what it describes a MapBox API Key Documentation
+* [Project Blacklist3r](https://notsosecure.com/project-blacklist3r) - A tool to find and store leaked API keys for penetration testing purposes
+* [Saying Goodbye to My Favorite 5 Minute P1](https://www.allysonomalley.com/2020/01/06/saying-goodbye-to-my-favorite-5-minute-p1/) - A good overview of API leaks and how they could be discovered easily
 
 ### Payloads for API Key Vulnerabilities
