@@ -19,25 +19,27 @@ The rewards offered for the discovery of vulnerabilities can vary widely, depend
 Bug bounty hunting is an effective way for companies and organizations to identify and address vulnerabilities in their systems and software. The principle behind bug bounty hunting is to incentivize ethical hackers to find and report vulnerabilities, in exchange for a reward. This method allows companies to identify vulnerabilities that may have gone unnoticed by their internal security teams, and address them before they can be exploited by malicious actors.
 
 ### Table of Contents
-* API Key Leaks
-* Argument Injection
-* AWS Amazon Bucket S3
-* Business Logic
-* click jacking
-* Cross Origin Resource Sharing
+* [API Key Leaks](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/API%20Key%20Leaks/apikey.md)
+* [Argument Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Argument%20Injection/argument.md)
+* [AWS Amazon Bucket S3](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/AWS%20Amazon%20Bucket%20S3/AWSBucket.md)
+* [Business Logic](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Business%20Logic/businesslogic.md)
+* [click jacking](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/ClickJacking/clickjacking.md)
+* [Cross Origin Resource Sharing](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Cross%20Origin%20Resource%20Sharing/CORS.md)
 + [Code Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Code%20Injection/codeinjection.md)
 + [Cross Site Response Forgery](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Cross%20Site%20Response%20Forgery/csrf.md)
-* CSV Injection
-* DOM Based Vulns
+* [CSV Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/CSV%20Injection/CSVInjection.md)
+* [Directory Transversal](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Directory%20Transversal/directory.md)
+* [DOM Based Vulns](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/DOM%20Based%20Vulnerabilities/DOM-Based.md)
 + [IDOR](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/IDOR/idor.md)
 + [Improper Authentication](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Improper%20Authentication/improperauthentication.md)
 + [Information Disclosure](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Information%20Disclosure/informationdisclosure.md)
-* JWT Attacks
-* OAuth2 Auth Vulns
+* [JWT Attacks](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/JWT%20Attacks/jwt-attacks.md)
+* [NoSQL Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/NoSQL%20Injection/nosql.md)
+* [OAuth2 Auth Vulns](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/OAuth2%20Authentication%20Vulnerabilities/OAuth.md)
 + [Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Privilege%20Escalation/privilegeescalation.md)
 + [Race Condition](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Race%20Condition/racecondition.md)
 + [SQL Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SQL%20Injection/sqlinjection.md)
 + [SSRF](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SSRF/ssrf.md)
-* SSTI
+* [SSTI](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/SSTI/ssti.md)
 + [XSS](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/XSS/xss.md)
 + [XXE Injection](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/XXE%20Injection/xxeinjection.md)
