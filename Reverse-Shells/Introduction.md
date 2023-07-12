@@ -41,5 +41,5 @@ Documentation and Reporting: Ethical hackers should maintain detailed documentat
 Reverse shells are powerful tools in an ethical hacker's toolkit, allowing professionals to gain control over compromised systems, assess vulnerabilities, and improve cybersecurity defenses. While they possess great potential for positive applications, it is crucial to abide by ethical guidelines, obtain proper permissions, and prioritize data protection. By employing reverse shells responsibly, ethical hackers contribute to the ongoing efforts of maintaining a secure digital landscape.
 
 ### Table of Contents
-* Reverse shells
-* Reverse Shell Generator
+* [Reverse shells](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/reverse-shells.md)
+* [Reverse Shell Generator](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/ReverseShellGenerator.md)
