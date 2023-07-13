@@ -32,6 +32,6 @@ Dynamic Port Forwarding: With Rpivot, ethical hackers can dynamically forward po
 
 Session Management: Rpivot simplifies session management by providing a user-friendly interface that allows ethical hackers to monitor active connections, switch between compromised systems, and execute commands seamlessly.
 
-# onclusion:
+# Conclusion:
 
 Pivoting is an essential technique in the arsenal of ethical hackers, enabling them to expand their reach within a network, escalate privileges, and extract valuable information. With tools like Rpivot, the process becomes more streamlined and efficient, providing cybersecurity professionals with enhanced control and flexibility while navigating complex network environments. By leveraging the capabilities of Rpivot and mastering the art of pivoting, ethical hackers can strengthen their ability to identify vulnerabilities, mitigate risks, and protect organizations from malicious attacks.
