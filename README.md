@@ -1,10 +1,12 @@
 # Hacking-Study-Guide
 
+**While this started mostly as a personal resource and backup I realize some have found it to be useful, if you found this repo to be useful please consider giving it a :star:**
+
 This is my hacking study guide. It is meant to be a general study guide for certifications such as eJPT, PNTP, and OSCP among others. If you have a suggestion or addition to these notes please let me know. You are free to use these notes to help you study for what ever test you wish.
 
 Currently, this covers Windows Escalation, Linux Escalation, and Bug Bounty as part of an ethical test of security. All of these aspects are very important. In the future, I may add additional sections such as those that cover Wi-fi and what ever else may come up in the realm of cybersecurity.
 
-I will be adding to this resource on a semi-regular basis.
+I will be adding to this resource on a **semi-regular** basis.
 ## Compelling Reasons to Learn Ethical Hacking and Penetration Testing
 
 Ethical hacking and penetration testing are essential components of the modern digital landscape. The exponential growth of the internet and interconnected technologies has brought numerous benefits, but has also made it easier for malicious actors to steal personal and sensitive data. As a result, organizations and individuals must be proactive in ensuring the security of their systems and data. Studying ethical hacking and penetration testing can provide individuals with the skills to understand how hackers operate and how to detect, prevent and remediate vulnerabilities.

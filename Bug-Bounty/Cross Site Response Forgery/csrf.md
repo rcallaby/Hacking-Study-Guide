@@ -1,5 +1,12 @@
 # Cross Site Response Forgery (CSRF)
 
+- [Introduction](#introduction)
+- [Example of CSRF Attack](#here-is-an-example-scenario-of-how-a-csrf-attack-might-work-in-practice)
+- [Tools to find CSRF](#tools-to-detect-csrf)
+- [Tutorials on CSRF](#good-tutorials-on-csrf)
+- [Payloads for CSRF](#payloads-for-cross-site-response-forgery)
+
+# Introduction
 Cross-site request forgery (CSRF) is a type of web security vulnerability that allows an attacker to perform actions on behalf of an authenticated user without their knowledge or consent. In a CSRF attack, the attacker crafts a request that appears to be from the user, but actually originates from a different website or domain that the user has visited or is currently visiting.
 
 From the perspective of a penetration tester, the goal is to identify potential CSRF vulnerabilities in a web application, and to demonstrate how an attacker could exploit them. To do this, the tester will typically follow a set of steps, such as:
@@ -12,7 +19,7 @@ Persuading the victim to visit the attacker's site, typically by sending them a 
 
 When the victim visits the attacker's site, the hidden form is automatically submitted in the background, sending the sensitive action to the target application without the victim's knowledge.
 
-Here is an example scenario of how a CSRF attack might work in practice:
+### Here is an example scenario of how a CSRF attack might work in practice:
 
 Let's say that an online banking website allows users to transfer money between accounts by submitting a form that includes the source account number, destination account number, and the amount to be transferred.
 

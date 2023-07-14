@@ -1,5 +1,13 @@
 # Click Jacking
 
+- [Introduction](#introduction)
+- [Understanding ClickJacking](#understanding-clickjacking)
+- [How ClickJacking Works](#how-clickjacking-works)
+- [Impact on Website Security](#how-clickjacking-works)
+- [Mitigating ClickJacking Attacks](#mitigating-clickjacking-vulnerabilities)
+- [Tutorials on ClickJacking](#tutorials-for-click-jacking)
+- [Payloads for ClickJacking](#payloads-for-click-jacking)
+
 # Introduction:
 In the world of bug bounty hunting and penetration testing, security researchers play a crucial role in identifying vulnerabilities that could be exploited by malicious actors. Clickjacking is one such website vulnerability that has gained significant attention due to its potential for abuse. This article aims to provide an in-depth understanding of clickjacking, its impact on website security, and how it can be utilized effectively in bug bounty hunting and penetration testing.
 
@@ -40,3 +48,7 @@ User Awareness and Education: Educating users about the risks associated with cl
 
 # Conclusion:
 Clickjacking presents a substantial threat to website security, enabling attackers to manipulate user interactions and perform unauthorized actions. However, by understanding how clickjacking works and utilizing it in bug bounty hunting and penetration testing, security researchers can play a pivotal role in identifying vulnerabilities and improving website defenses. By implementing preventive measures, organizations can safeguard their users from clickjacking attacks and maintain a secure online environment.
+
+### Tutorials for Click Jacking
+
+### Payloads for Click Jacking
