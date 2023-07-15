@@ -60,5 +60,10 @@ JSON Web Tokens (JWTs) offer a convenient method for implementing authentication
 
 ### Tutorials on JWT Attacks
 
+* [5 Easy Steps to Understanding JSON WebToken](https://medium.com/cyberverse/five-easy-steps-to-understand-json-web-tokens-jwt-7665d2ddf4d5) - An article to explain JSON Web Token
+* [Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/) - A article explaining how to attack JWT authentication
+* [Critical Vulnerabilities in JSON Web Token Libraries](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) - A article explaining critical vulns in JWT Tokens
+* [JWT Hacking 101](https://trustfoundry.net/2017/12/08/jwt-hacking-101/) - A detailed article on how to hack JSON Web Tokens
+* [Simple JWT Hacking](https://medium.com/iqube-kct/simple-jwt-hacking-73870a976750) - Another article explaining JWT Hacking
 
 ### Payloads for JWT Attacks
