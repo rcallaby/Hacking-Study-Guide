@@ -37,3 +37,8 @@ There are several tools that can be used to find XXE Injection vulnerabilities i
 [xxeftp](https://github.com/staaldraad/xxeserv) - A mini or micro webserver with FTP support
 [230-OOB](https://github.com/lc/230-OOB) - An Out of Band XXE Server for retriving contents over FTP and also generates payloads
 [XXEInjector](https://github.com/enjoiz/XXEinjector) - A tool for automatic exploitation of XXE vulnerabiltiy using direct and different out of band methods
+
+### Tutorials on XXE Injection
+
+
+### Payloads for XXE Injection

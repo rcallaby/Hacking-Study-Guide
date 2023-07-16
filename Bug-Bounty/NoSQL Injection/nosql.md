@@ -41,4 +41,10 @@ NoSQL databases have revolutionized the way data is stored and processed in mode
 
 ### Tutorials for NoSQL Vulnerabilities
 
+- [NoSQL Injection in MongoDB](https://zanon.io/posts/nosql-injection-in-mongodb/) - A detailed article explaining NoSQL Injection in MongoDB
+- [Testing for NoSQL Injection](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.6-Testing_for_NoSQL_Injection) - A pretty good tutorial by OWASP
+- [NoSQL Injection Cheatsheet](https://nullsweep.com/nosql-injection-cheatsheet/) - A cheatsheet for NoSQL injection by Null Sweep
+- [NoSQL Injection](https://book.hacktricks.xyz/pentesting-web/nosql-injection) - A pretty good article explaining NoSQL Injection
+
+
 ### Payloads for NoSQL 
