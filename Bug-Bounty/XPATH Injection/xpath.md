@@ -69,6 +69,13 @@ Follow the principle of least privilege by granting minimal access rights to dat
 # Conclusion:
 XPATH injection vulnerabilities pose a significant threat to web applications, enabling attackers to manipulate queries and gain unauthorized access to sensitive information. As a bug bounty hunter or ethical hacker, understanding XPATH injection and its potential consequences is crucial for identifying and addressing these vulnerabilities. By implementing robust input validation, utilizing parameterized queries, and adhering to the principle of least privilege, developers can effectively mitigate the risk posed by XPATH injection attacks, safeguarding web applications and user data.
 
+### Tools for XPATH Injection
+
+- [xcat](https://github.com/orf/xcat) - Automate XPATH Injection Attacks
+- [XXXpwn](https://github.com/feakk/xxxpwn) - Advanced XPATH Injection Tool
+- [xpath-blind-exlorer](https://github.com/micsoftvn/xpath-blind-explorer)
+- [XmlChor](https://github.com/Harshal35/XMLCHOR) - Xpath injection exploitation tool
+
 ### Tutorials for XPATH Injection
 
 ### Payloads for XPATH Injection
