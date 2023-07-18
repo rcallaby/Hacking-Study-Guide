@@ -77,5 +77,8 @@ XPATH injection vulnerabilities pose a significant threat to web applications, e
 - [XmlChor](https://github.com/Harshal35/XMLCHOR) - Xpath injection exploitation tool
 
 ### Tutorials for XPATH Injection
+- [What is an XPATH Injection](https://learn.snyk.io/lesson/xpath-injection/) - A good overview by Snyk
+- [XPATH Injection](https://book.hacktricks.xyz/pentesting-web/xpath-injection) - Another great article by Hacktricks
+- [XPATH Injection](https://owasp.org/www-community/attacks/XPATH_Injection) - A good tutorial/article by OWASP
 
 ### Payloads for XPATH Injection
