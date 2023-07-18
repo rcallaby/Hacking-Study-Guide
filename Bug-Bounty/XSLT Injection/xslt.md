@@ -63,6 +63,10 @@ If you discover an XSLT injection vulnerability during a bug bounty program or p
 XSLT injection can pose significant risks to web applications, potentially leading to information disclosure, remote code execution, or denial of service attacks. Understanding the nature of this vulnerability and how to identify and exploit it is crucial for bug bounty hunters and penetration testers. By adopting proper mitigation strategies and responsible disclosure practices, security professionals can contribute to the improvement of web application security and help protect users' data.
 
 ### Tutorials on XSLT Injection
-
+- [XSLT Injection](https://vulncat.fortify.com/en/detail?id=desc.dataflow.java.xslt_injection) - A pretty good article by Fortify
+- [XSLT Basics](https://www.atlan.digital/lab/xslt-injection-basics) - A good overview by atlan digital
+- [From XSLT code execution to Meterpreter shells](https://www.agarri.fr/blog/archives/2012/07/02/from_xslt_code_execution_to_meterpreter_shells/index.html) - Another good overview of the subject
+- [XSLT Server Side Injection](https://book.hacktricks.xyz/pentesting-web/xslt-server-side-injection-extensible-stylesheet-languaje-transformations) - A good overview by hacktrickz
+- [XSLT for Dummies](https://blog.pentesteracademy.com/xslt-injections-for-dummies-a0cfbe0c42f5) - A good basic article by Pentester Academy
 
 ### Payloads for XSLT Injection

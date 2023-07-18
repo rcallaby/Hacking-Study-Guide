@@ -39,6 +39,9 @@ There are several tools that can be used to find XXE Injection vulnerabilities i
 [XXEInjector](https://github.com/enjoiz/XXEinjector) - A tool for automatic exploitation of XXE vulnerabiltiy using direct and different out of band methods
 
 ### Tutorials on XXE Injection
-
+- [XXE Injection](https://portswigger.net/web-security/xxe) - A good overview of XXE by Portswigger
+- [XXE Injection](https://learn.snyk.io/lesson/xxe/) - Another good overview by Synk
+- [XXE Complete Guide](https://www.hackerone.com/knowledge-center/xxe-complete-guide-impact-examples-and-prevention) - A great article by HackerOne
+- [XXE Attacks](https://brightsec.com/blog/xxe-attack/) - A good overview by Bright Security
 
 ### Payloads for XXE Injection
