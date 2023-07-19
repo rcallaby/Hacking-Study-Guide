@@ -1,13 +1,13 @@
 # DOM Based Vulnerabilities
 
-- Introduction
-- Understanding DOM
-- DOM Vulnerabilities
-- DOM Clobbering
-- How DOM Clobbering Works
-- Bug Bounty Hunting and Pentration Testing with DOM Clobbering
-- Tutorials for DOM Based Vulnerabilities
-- Payloads for DOM Based Vulns
+- [Introduction](#introduction)
+- [Understanding DOM](#understanding-dom)
+- [DOM Vulnerabilities](#dom-vulnerabilities)
+- [DOM Clobbering](#dom-clobbering)
+- [How DOM Clobbering Works](#how-dom-clobbering-works)
+- [Bug Bounty Hunting and Pentration Testing with DOM Clobbering](#bug-bounty-hunting-and-penetration-testing-with-dom-clobbering)
+- [Tutorials for DOM Based Vulnerabilities](#tutorials-on-dom-based-vulnerabilities)
+- [Payloads for DOM Based Vulns](#payloads-for-dom-based-vulnerabilities)
 
 # Introduction:
 In the realm of web security, bug bounty hunting and penetration testing play crucial roles in identifying vulnerabilities and strengthening web applications. One such area of focus is DOM (Document Object Model) vulnerabilities, which can have significant implications for the security of web applications. This article will delve into the specifics of DOM vulnerabilities, with a special emphasis on DOM clobbering, highlighting its relevance in bug bounty hunting and penetration testing.
@@ -54,3 +54,122 @@ DOM vulnerabilities, including DOM clobbering, pose significant threats to the s
 - [DOM Based XSS](https://learn.snyk.io/lesson/dom-based-xss/) - A good tutorial with examples by Snyk
 
 ### Payloads for DOM Based Vulnerabilities
+
+**Common Sources**
+
+```
+document.URL
+document.documentURI
+document.URLUnencoded
+document.baseURI
+location
+document.cookie
+document.referrer
+window.name
+history.pushState
+history.replaceState
+localStorage
+sessionStorage
+IndexedDB (mozIndexedDB, webkitIndexedDB, msIndexedDB)
+Database
+
+
+```
+
+**Sinks**
+
+```
+location
+location.host
+location.hostname
+location.href
+location.pathname
+location.search
+location.protocol
+location.assign()
+location.replace()
+open()
+domElem.srcdoc
+XMLHttpRequest.open()
+XMLHttpRequest.send()
+jQuery.ajax()
+$.ajax()
+
+```
+
+**Additional Sinks**
+
+```
+eval()
+Function() constructor
+setTimeout()
+setInterval()
+setImmediate()
+execCommand()
+execScript()
+msSetImmediate()
+range.createContextualFragment()
+crypto.generateCRMFRequest()
+
+```
+
+**Ajax Request Manipulation**
+
+```
+XMLHttpRequest.setRequestHeader()
+XMLHttpRequest.open()
+XMLHttpRequest.send()
+jQuery.globalEval()
+$.globalEval()
+
+```
+
+**Client Side SQL Injection**
+
+```
+executeSql()
+
+```
+
+```
+sessionStorage.setItem()
+localStorage.setItem()
+
+```
+
+**Client Side JSON Injection**
+
+```
+JSON.parse()
+jQuery.parseJSON()
+$.parseJSON()
+
+```
+
+**More Sinks**
+
+```
+scriptElement.src
+scriptElement.text
+scriptElement.textContent
+scriptElement.innerText
+someDOMElement.setAttribute()
+someDOMElement.search
+someDOMElement.text
+someDOMElement.textContent
+someDOMElement.innerText
+someDOMElement.outerText
+someDOMElement.value
+someDOMElement.name
+someDOMElement.target
+someDOMElement.method
+someDOMElement.type
+someDOMElement.backgroundImage
+someDOMElement.cssText
+someDOMElement.codebase
+document.title
+document.implementation.createHTMLDocument()
+history.pushState()
+history.replaceState()
+
+```
