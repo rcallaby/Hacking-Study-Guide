@@ -1,5 +1,14 @@
 # DOM Based Vulnerabilities
 
+- Introduction
+- Understanding DOM
+- DOM Vulnerabilities
+- DOM Clobbering
+- How DOM Clobbering Works
+- Bug Bounty Hunting and Pentration Testing with DOM Clobbering
+- Tutorials for DOM Based Vulnerabilities
+- Payloads for DOM Based Vulns
+
 # Introduction:
 In the realm of web security, bug bounty hunting and penetration testing play crucial roles in identifying vulnerabilities and strengthening web applications. One such area of focus is DOM (Document Object Model) vulnerabilities, which can have significant implications for the security of web applications. This article will delve into the specifics of DOM vulnerabilities, with a special emphasis on DOM clobbering, highlighting its relevance in bug bounty hunting and penetration testing.
 
@@ -40,5 +49,8 @@ Context-specific testing: Tailor the testing approach based on the application's
 DOM vulnerabilities, including DOM clobbering, pose significant threats to the security of web applications. Bug bounty hunters and penetration testers play a crucial role in identifying and mitigating these vulnerabilities. By understanding the intricacies of DOM clobbering and employing appropriate testing methodologies, security professionals can contribute to creating a more secure web environment, safeguarding applications and user data from potential attacks.
 
 ### Tutorials on DOM Based Vulnerabilities
+- [DOM Based Vulnerabilities](https://portswigger.net/web-security/dom-based) - A good overview by Portswigger
+- [DOM-based Cross Site Scripting Attack in Depth](https://www.geeksforgeeks.org/dom-based-cross-site-scripting-attack-in-depth/) - A good article by GeeksforGeeks
+- [DOM Based XSS](https://learn.snyk.io/lesson/dom-based-xss/) - A good tutorial with examples by Snyk
 
 ### Payloads for DOM Based Vulnerabilities

