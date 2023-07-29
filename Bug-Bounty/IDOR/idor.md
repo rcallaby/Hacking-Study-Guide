@@ -4,9 +4,13 @@ As a penetration tester, identifying and exploiting IDOR (Insecure Direct Object
 
 To identify IDOR vulnerabilities, a penetration tester would typically begin by performing a comprehensive assessment of the application's behavior and functionality. This may involve analyzing the source code, testing the application manually, and using automated tools to scan for potential vulnerabilities.
 
+### Exploiting IDOR Vulnerabilities
+
 Once an IDOR vulnerability has been identified, a penetration tester can exploit it by modifying the parameters in a URL to access or manipulate sensitive objects directly. For example, in an application that displays user information, a tester could change the user ID parameter in the URL to access information for another user without proper authentication.
 
 It is important for a penetration tester to understand the implications of exploiting an IDOR vulnerability. Depending on the nature and sensitivity of the data being accessed, exploitation of an IDOR vulnerability could lead to serious consequences, such as theft of confidential information, financial loss, or damage to a company's reputation.
+
+### Mitigating IDOR Vulnerabilities
 
 To mitigate IDOR vulnerabilities, application developers should implement proper authorization checks, such as verifying that the user has the necessary permissions before allowing access to sensitive objects. Penetration testers can also provide recommendations to improve the security of the application and help prevent IDOR vulnerabilities from being exploited.
 

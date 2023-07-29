@@ -65,3 +65,7 @@ Reporting and Responsible Disclosure: Document your findings and report them to 
 
 # Conclusion:
 Server Side Template Injection is a critical vulnerability that can lead to remote code execution and compromise of web applications. In bug bounty hunting and ethical hacking, discovering and exploiting SSTI vulnerabilities can be rewarding, as they often expose serious flaws in the target systems. By understanding the mechanics of SSTI, employing proper reconnaissance, and following responsible disclosure practices, security researchers play a vital role in helping organizations fortify their defenses and protect user data from potential attacks.
+
+### Tutorials for SSTI
+
+### Payloads for SSTI

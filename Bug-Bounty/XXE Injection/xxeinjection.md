@@ -1,5 +1,11 @@
 # XXE Injection
 
+- [How XXE Injection works](#how-xxe-injection-works)
+- [Finding XXE Injection Vulnerabilties](#finding-xxe-injection-vulnerabilities)
+- [Tools for XXE Injection](#tools-for-xxe-injection)
+- [Tutorials for XXE Injection](#tutorials-on-xxe-injection)
+- [Payloads for XXE Injection](#payloads-for-xxe-injection)
+
 XXE Injection or XML External Entity Injection is a common vulnerability in web applications that can lead to sensitive data exposure, server-side request forgery (SSRF), denial of service (DoS), and other types of attacks. This vulnerability arises when an XML parser processes input from an untrusted source without proper validation. In this article, we will discuss XXE Injection in terms of Bug Bounty Hunting or Penetration Testing, including how to find vulnerabilities and the tools used to find them.
 
 ## How XXE Injection Works
@@ -34,9 +40,9 @@ There are several tools that can be used to find XXE Injection vulnerabilities i
 
 
 ## Tools for XXE Injection
-[xxeftp](https://github.com/staaldraad/xxeserv) - A mini or micro webserver with FTP support
-[230-OOB](https://github.com/lc/230-OOB) - An Out of Band XXE Server for retriving contents over FTP and also generates payloads
-[XXEInjector](https://github.com/enjoiz/XXEinjector) - A tool for automatic exploitation of XXE vulnerabiltiy using direct and different out of band methods
+- [xxeftp](https://github.com/staaldraad/xxeserv) - A mini or micro webserver with FTP support
+- [230-OOB](https://github.com/lc/230-OOB) - An Out of Band XXE Server for retriving contents over FTP and also generates payloads
+- [XXEInjector](https://github.com/enjoiz/XXEinjector) - A tool for automatic exploitation of XXE vulnerabiltiy using direct and different out of band methods
 
 ### Tutorials on XXE Injection
 - [XXE Injection](https://portswigger.net/web-security/xxe) - A good overview of XXE by Portswigger
