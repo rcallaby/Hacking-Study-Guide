@@ -7,6 +7,15 @@ These checklists are a work in progress and may be added to on a gradual basis. 
 If you find these checklists to be helpful, or you find this repository to be helpful please consider giving it a star.
 
 ### Table of Contents
-- Bug Bounty
-- Cloud Computing
-- Network
+- Active Directory
+- [Bug Bounty](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/bugbounty.md)
+- [Cloud Computing](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/cloudcomputing.md)
+- Domain Escalation
+- Domain Persistance
+- Environment Breakout
+- Lateral Movement
+- Linux Privelege Escalation
+- Microsoft Exchange
+- [Network](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/network.md)
+- Windows Build
+- Windows Privilege Escalation
