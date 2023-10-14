@@ -20,8 +20,20 @@ Port Scanning using the following tools: Nmap, Netscan tools, and Network Monito
 
 ## Banner Grabbing/OS Fingerprinting
 
+- [ ] Perform Banner Grabbing with tools such as:
+    - [ ] Telnet
+    - [ ] IDServe
+    - [ ] Nmap
+
 ## Scan for possible vulnerabilities
+- [ ] GFILanguard
+- [ ] Nessus
+
 
 ## Prepare Proxies
+- [ ] Proxifier
+- [ ] SSL Proxy
+- [ ] Proxy Finder
 
 ## Document Findings
+- Document all findings as per the rules and the scope of the penetration test
