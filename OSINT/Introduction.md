@@ -46,14 +46,14 @@ OSINT is a valuable tool for any penetration tester as it provides them with val
 
 
 ### Table of Contents
-+ Email OSINT
-+ Facebook OSINT
-+ Github OSINT
-+ Google Dorking
-+ Image OSINT
-+ Password OSINT
-+ Phone OSINT
-+ Reddit OSINT
-+ SnapChat OSINT
-+ TikTok OSINT
-+ Twitter OSINT
+- Email OSINT
+- Facebook OSINT
+- Github OSINT
+- Google Dorking
+- Image OSINT
+- Password OSINT
+- Phone OSINT
+- Reddit OSINT
+- SnapChat OSINT
+- TikTok OSINT
+- Twitter (X) OSINT

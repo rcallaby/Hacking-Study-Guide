@@ -43,6 +43,8 @@ Changing the parameters and encoding them as various hashes help. Just keep tryi
 * [How To Hunt IDOR](https://github.com/KathanP19/HowToHunt/blob/master/IDOR/IDOR.md) - A great github resource on how to hunt down IDOR with many examples
 * [Insecure Direct Object References](https://www.google.com/search?client=firefox-b-1-d&q=IDOR+Tutorials#ip=1) - A pretty good overview by Tutorialspoint
 
+### Payloads for IDOR
+
 
 
 

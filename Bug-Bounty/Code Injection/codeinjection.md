@@ -33,3 +33,5 @@ Overall, code injection is a powerful technique used by attackers to exploit vul
 [A Pentesters Guide to Code Injection](https://www.cobalt.io/blog/a-pentesters-guide-to-code-injection) - A fairly good overview to Code Injection tutorial by Cobalt.io
 [Code Injection: An Easy Guide in 5 Points](https://u-next.com/blogs/cyber-security/code-injection/) - A fairly good overview by Jigsaw Academy
 [Code Injection in Brief: Types, Examples, and Mitigation](https://brightsec.com/blog/code-injection/)
+
+### Code Injection Payloads
