@@ -46,9 +46,11 @@ OSINT is a valuable tool for any penetration tester as it provides them with val
 
 
 ### Table of Contents
+- Dark Web OSINT
 - Email OSINT
 - Facebook OSINT
 - Github OSINT
+- News & Media OSINT
 - Google Dorking
 - Image OSINT
 - Password OSINT

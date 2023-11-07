@@ -1,7 +1,5 @@
 # SSRF Service Side Request Forgery
 
-
-# Introducton
 As a penetration tester, it is important to be aware of the SSRF (Server-Side Request Forgery) vulnerability as it can allow attackers to perform malicious actions on behalf of a vulnerable application.
 
 SSRF is a type of web vulnerability that occurs when an application makes a request to an external resource using user-supplied data, but fails to properly validate or sanitize the input. This can allow an attacker to craft a request that is not intended, such as sending requests to internal resources that are not meant to be accessible from the internet.
