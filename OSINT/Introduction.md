@@ -46,16 +46,16 @@ OSINT is a valuable tool for any penetration tester as it provides them with val
 
 
 ### Table of Contents
-- Dark Web OSINT
-- Email OSINT
-- Facebook OSINT
-- Github OSINT
-- News & Media OSINT
-- Google Dorking
-- Image OSINT
-- Password OSINT
-- Phone OSINT
-- Reddit OSINT
-- SnapChat OSINT
-- TikTok OSINT
-- Twitter (X) OSINT
+- [Dark Web OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Dark%20Web%20OSINT/darkweb.md)
+- [Email OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Email%20OSINT/emailosint.md)
+- [Facebook OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Facebook%20OSINT/facebookosint.md)
+- [Github OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Github%20OSINT/githubosint.md)
+- [News & Media OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/News-and-Media/newsmedia.md)
+- [Google Dorking](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Google%20Dorking/googledork.md)
+- [Image OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Image%20OSINT/imageosint.md)
+- [Password OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Password%20OSINT/passwordosint.md)
+- [Phone OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Phone%20OSINT/phoneosint.md)
+- [Reddit OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Reddit%20OSINT/redditosint.md)
+- [SnapChat OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/SnapChat%20OSINT/snapchatosint.md)
+- [TikTok OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/TikTok%20OSINT/tiktokosint.md)
+- [Twitter (X) OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Twitter%20OSINT/twitterosint.md)
