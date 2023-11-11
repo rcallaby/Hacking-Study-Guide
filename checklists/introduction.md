@@ -7,15 +7,15 @@ These checklists are a work in progress and may be added to on a gradual basis. 
 If you find these checklists to be helpful, or you find this repository to be helpful please consider giving it a star.
 
 ### Table of Contents
-- Active Directory
+- [Active Directory](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/actuvedurectory.md)
 - [Bug Bounty](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/bugbounty.md)
 - [Cloud Computing](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/cloudcomputing.md)
-- Domain Escalation
-- Domain Persistance
-- Environment Breakout
-- Lateral Movement
-- Linux Privelege Escalation
-- Microsoft Exchange
+- [Domain Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/DomainEscalation.md)
+- [Domain Persistance](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/DomainPersistance.md)
+- [Environment Breakout](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/EnvironmentBreakout.md)
+- [Lateral Movement](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/LateralMovement.md)
+- [Linux Privelege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/LinuxPrivEsc.md)
+- [Microsoft Exchange](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/MicrosoftExchange.md)
 - [Network](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/network.md)
-- Windows Build
-- Windows Privilege Escalation
+- [Windows Build](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/WindowsBuild.md)
+- [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/WindowsPrivEsc.md)
