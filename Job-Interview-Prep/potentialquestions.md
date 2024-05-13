@@ -95,9 +95,21 @@ Network reconnaissance involves gathering information about a target network to 
 2. How do attackers use the information gathered during network reconnaissance to launch targeted attacks, and how can organizations defend against such attacks?
 
 ## Web Application Security:
-- What are the OWASP Top 10 vulnerabilities, and how would you detect and exploit them?
-- Explain the difference between SQL injection and XSS (Cross-Site Scripting) attacks.
-- How do you approach testing for authentication and session management vulnerabilities in web applications?
+1. **What are the OWASP Top 10 vulnerabilities, and how would you detect and exploit them?**
+   The OWASP (Open Web Application Security Project) Top 10 is a list of the most critical web application security risks. It includes vulnerabilities such as Injection, Broken Authentication, Sensitive Data Exposure, XML External Entities (XXE), Broken Access Control, Security Misconfiguration, Cross-Site Scripting (XSS), Insecure Deserialization, Using Components with Known Vulnerabilities, and Insufficient Logging & Monitoring. Detecting and exploiting these vulnerabilities involve various techniques such as penetration testing, code review, and automated scanning tools. For example, to detect Injection vulnerabilities like SQL Injection, one might input malicious SQL queries into web forms or URLs to see if the application's database is susceptible to manipulation. Exploiting SQL Injection involves crafting SQL queries that bypass input sanitization to extract or modify sensitive data. Similarly, other vulnerabilities have their detection and exploitation methods tailored to their nature.
+
+2. **Explain the difference between SQL injection and XSS (Cross-Site Scripting) attacks.**
+   SQL Injection and XSS are both injection attacks, but they target different components of web applications. SQL Injection involves inserting malicious SQL queries into input fields or URLs that interact with a backend database. The goal is to manipulate the database query logic to extract or modify sensitive data, or even to gain unauthorized access to the system. XSS, on the other hand, involves injecting malicious scripts, typically JavaScript, into web pages viewed by other users. This allows attackers to execute scripts in the context of other users' browsers, potentially stealing cookies, session tokens, or other sensitive information, or even performing actions on behalf of the user without their consent. In summary, SQL Injection targets the backend database, while XSS targets users' browsers.
+
+3. **How do you approach testing for authentication and session management vulnerabilities in web applications?**
+   Testing for authentication and session management vulnerabilities involves examining how the application handles user authentication and manages user sessions. This includes verifying the strength of authentication mechanisms, such as password policies, multi-factor authentication, and session management techniques like session tokens, cookies, and expiration times. A comprehensive approach might include:
+   - Testing for weak passwords by attempting common password combinations or using brute-force attacks.
+   - Testing for vulnerabilities such as session fixation, where an attacker can hijack a user's session by controlling the session ID.
+   - Verifying that session tokens are securely generated, stored, and invalidated after logout or when the session expires.
+   - Checking for proper access controls to ensure that authenticated users can only access authorized resources.
+   - Testing for session-related vulnerabilities like session replay attacks or session hijacking.
+   - Conducting penetration testing to simulate real-world attacks and identify any vulnerabilities in the authentication and session management mechanisms.
+   - Utilizing automated scanning tools and manual testing techniques to cover a wide range of scenarios and edge cases.
 
 ## Operating Systems and Infrastructure:
 - How would you perform a privilege escalation on a Unix-based system?
