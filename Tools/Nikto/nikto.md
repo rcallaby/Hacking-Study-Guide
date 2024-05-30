@@ -1,7 +1,5 @@
 # Nikto
 
-Absolutely, I can guide you through using Nikto, a popular web vulnerability scanner. Here’s a step-by-step tutorial to help you get started:
-
 ### Step 1: Installation
 
 #### On Debian-based systems (e.g., Ubuntu)
