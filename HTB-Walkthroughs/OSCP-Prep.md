@@ -16,8 +16,6 @@ Of course, everyone preps differently so I would recommend you take what you wis
 * Granny 
 * Grandpa
 
-
-
 ## Medium Linux Boxes
 * BackendTwo
 * Backend
