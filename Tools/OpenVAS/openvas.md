@@ -1,6 +1,6 @@
 # OpenVAS
 
-## OpenVAS Tutorial for Junior Penetration Testers
+## OpenVAS - A Quick Start Guide
 
 ### Introduction
 
