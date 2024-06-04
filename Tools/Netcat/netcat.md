@@ -1,6 +1,6 @@
 # Netcat
 
-### **Introduction to Netcat**
+## **Introduction to Netcat**
 
 Netcat, often referred to as the "Swiss Army knife" of networking tools, is a versatile utility used for reading from and writing to network connections using TCP or UDP protocols. It can be used for a variety of purposes such as port scanning, banner grabbing, file transfers, and even creating reverse shells.
 

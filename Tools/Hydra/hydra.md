@@ -1,7 +1,7 @@
 # hydra
 
 
-### Step-by-Step Tutorial for Using Hydra
+## Basic Tutorial on Hydra
 
 #### Prerequisites
 1. **Operating System:** Hydra works best on Linux, so ensure you have a Linux distribution installed (e.g., Kali Linux, which comes with Hydra pre-installed).

@@ -1,6 +1,6 @@
 # Merlin
 
-### Medusa: A Comprehensive Guide for Penetration Testers
+## Medusa: A Comprehensive Guide for Penetration Testers
 
 #### Installation
 

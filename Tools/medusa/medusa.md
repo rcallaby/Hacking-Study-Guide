@@ -1,6 +1,6 @@
 # medusa
 
-### Medusa: A Comprehensive Guide for Penetration Testers
+## Medusa: A Quick Start Guide for Penetration Testers
 
 Medusa is a versatile, fast, and parallel brute-forcer which is often used in penetration testing to test the strength of passwords for various services. This guide will cover the essentials of using Medusa, including installation, basic commands, and advanced tips.
 
