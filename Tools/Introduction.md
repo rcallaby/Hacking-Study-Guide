@@ -7,17 +7,21 @@ This will be a directory containing notes, tutorials, and other pertinent items 
 - Apktool
 - Autospy
 - BeEF
+- Bettercap
 - [Burp Suite](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Burp%20Suite/burpsuite.md)
 - [chisel](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/chisel/chisel.md)
 - [CMSMap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/CMSMap/CMSMap.md)
 - Dirb
+- Ettercap
 - [Fierce](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Fierce/fierce.md)
 - Fluxion
 - Hydra
 - [Impacket](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/impacket/impacket.md)
+- Inveigh
 - [Jack The Ripper](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Jack%20The%20Ripper/jacktheripper.md)
 - King Phisher
 - [Kismet-Wireless](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Kismet-Wireless/kismet-wireless.md)
+- linux-exploit-suggester
 - [Lynis](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Lynis/lynis.md)
 - Maltego
 - [medusa](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/medusa/medusa.md)
