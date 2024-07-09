@@ -3,16 +3,22 @@
 This will be a directory containing notes, tutorials, and other pertinent items related to the various tools used to perform various penetration tests
 
 ### Table of Contents
+- ADRecon
 - [aircrack-ng](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/aircrack-ng/aircrack-ng.md)
+- amass
 - Apktool
 - Autospy
 - BeEF
 - Bettercap
+- Bloodhound
 - [Burp Suite](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Burp%20Suite/burpsuite.md)
 - [chisel](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/chisel/chisel.md)
 - [CMSMap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/CMSMap/CMSMap.md)
 - Dirb
+- Elk Stack
 - Ettercap
+- evil-winrm
+- ffuf
 - [Fierce](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Fierce/fierce.md)
 - Fluxion
 - Hydra
