@@ -16,14 +16,14 @@ This will be a directory containing notes, tutorials, and other pertinent items 
 - [CMSMap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/CMSMap/CMSMap.md)
 - Dirb
 - Elk Stack
-- Ettercap
-- evil-winrm
+- [Ettercap](https://github.com/rcallaby/Hacking-Study-Guide/tree/main/Tools/Ettercap)
+- [evil-winrm](https://github.com/rcallaby/Hacking-Study-Guide/tree/main/Tools/evil-winrm)
 - ffuf
 - [Fierce](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Fierce/fierce.md)
-- Fluxion
+- [Fluxion]https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Fluxion/Fluxion.md
 - Hydra
 - [Impacket](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/impacket/impacket.md)
-- Inveigh
+- [Inveigh](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Inveigh/inveigh.md)
 - [Jack The Ripper](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Jack%20The%20Ripper/jacktheripper.md)
 - King Phisher
 - [Kismet-Wireless](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Kismet-Wireless/kismet-wireless.md)
@@ -39,15 +39,15 @@ This will be a directory containing notes, tutorials, and other pertinent items 
 - [Nmap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Nmap/nmap.md)
 - OpenVAS
 - [OWASP Zap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/OWASP%20ZAP/owaspzap.md)
-- pwncat-cs
+- [pwncat-cs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/pwncat-cs/pwncat-cs.md)
 - [OpenVAS](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/OpenVAS/openvas.md)
 - [reGeorg](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/reGeorg/reGeorg.md)
 - [Rpivot](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Rpivot/Rpivot.md)
 - [Skipfish](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Skipfish/skipfish.md)
 - [sqlmap](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/sqlmap/sqlmap.md)
 - [Sshuttle](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Sshuttle/Sshuttle.md)
-- Tiger
+- [Tiger](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Tiger/Tiger.md)
 - [Tunna](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Tunna/Tunna.md)
 - [Wireshark](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Wireshark/wireshark.md)
 - [WPScan](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/WPScan/WPScan.md)
-- Yersimia
+- [Yersimia](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Yersinia/Yersinia.md)
