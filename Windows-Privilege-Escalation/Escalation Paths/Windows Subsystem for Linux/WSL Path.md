@@ -50,5 +50,15 @@ Once privileges have been escalated, a penetration tester can attempt to gain ad
 The WSL escalation path is an important concept for penetration testers to understand. By identifying potential vulnerabilities in the WSL environment and exploiting them to escalate privileges, attackers can gain elevated access to a Windows system. Penetration testers can use the techniques outlined above to assess the security posture of WSL installations and identify potential vulnerabilities that could be exploited by attackers.
 
 ## Tools Used for WSL Path
+- Metaspolit
+- Powershell Empire
+- Powerspolit
+- SharpHound
+- BloodHound
+- Impacket
+- Covenant
+- Nishang
+- MimiKatz
+- Empire
 
 
