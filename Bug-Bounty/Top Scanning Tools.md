@@ -39,7 +39,7 @@ Below is a detailed listing of many more tools and what function they perform.
 + [dirsearch](https://github.com/maurosoria/dirsearch)
 + [gospider](https://github.com/jaeles-project/gospider)
 + [dirbuster-ng](https://github.com/digination/dirbuster-ng)
-+ crawley
++ [crawley]{https://github.com/s0rg/crawley}
 
 ## Links
 + [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
