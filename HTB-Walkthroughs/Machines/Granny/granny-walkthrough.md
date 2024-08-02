@@ -7,3 +7,13 @@ The vulnerability on the "Granny" box primarily revolves around the use of a dep
 "Granny" demonstrates the importance of regular software updates and proper system configuration as essential components of a robust cybersecurity strategy. It emphasizes the risks associated with neglecting security patches and the consequences of using deprecated software. By exploiting these weaknesses, users can practice various penetration testing techniques, hone their skills in privilege escalation, and gain a better understanding of how real-world systems can be compromised, all within a controlled and ethical environment provided by Hack The Box.
 
 ## Initial Assesment
+
+
+## Gaining a Foothold
+
+### Obtaining User
+
+### Escalating Privileges from User to Root
+
+
+## Concluding Thoughts

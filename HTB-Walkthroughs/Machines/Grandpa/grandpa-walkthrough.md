@@ -7,3 +7,16 @@ To gain initial access, the attacker typically leverages a well-known vulnerabil
 "Grandpa" serves as a valuable training ground for aspiring penetration testers and security professionals by showcasing the real-world exploitation of a legacy Windows vulnerability. It reinforces the importance of timely patching and highlights the potential risks associated with unpatched systems. By exploiting this box, participants can learn about vulnerability assessment, exploit development, and privilege escalation techniques in a controlled environment, enhancing their skills in offensive cybersecurity.
 
 ## Intial Assesment
+
+
+## Initial Assesment
+
+
+## Gaining a Foothold
+
+### Obtaining User
+
+### Escalating Privileges from User to Root
+
+
+## Concluding Thoughts

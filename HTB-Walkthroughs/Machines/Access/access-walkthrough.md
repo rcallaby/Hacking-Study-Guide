@@ -6,4 +6,19 @@ The vulnerability that allows exploitation on the "Access" machine is centered a
 
 "Access" on Hack The Box provides a realistic demonstration of how misconfigurations and weaknesses in Active Directory environments can lead to significant security breaches. It highlights the importance of proper password policies, user account management, and GPO configuration to prevent unauthorized access and privilege escalation in Windows-based networks. This machine serves as an invaluable learning opportunity for cybersecurity professionals seeking to enhance their skills in securing Active Directory environments and understanding the implications of common vulnerabilities.
 
-## Initial Assessment.
+## Initial Assessment
+
+## Intial Assesment
+
+
+## Initial Assesment
+
+
+## Gaining a Foothold
+
+### Obtaining User
+
+### Escalating Privileges from User to Root
+
+
+## Concluding Thoughts
