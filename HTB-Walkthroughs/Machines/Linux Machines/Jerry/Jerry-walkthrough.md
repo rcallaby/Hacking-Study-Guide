@@ -1,1 +1,0 @@
-# Jerry Walkthrough on Hack the Box
