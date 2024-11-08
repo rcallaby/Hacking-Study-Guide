@@ -1,4 +1,4 @@
-# Bashed Hack The Box Writeup
+# Blazorized HackTheBox Writeup
 
 ## Initial Assesment
 
