@@ -35,3 +35,20 @@ Staying safe on the Dark Web involves a combination of security measures, ethica
 12. **Be Prepared to Disconnect:** In case you encounter any suspicious activity or feel uneasy about a situation, be prepared to disconnect from the dark web promptly. Trust your instincts and prioritize your safety.
 
 Remember, the dark web can be a risky environment, and there are legal and ethical boundaries that should never be crossed. Always exercise caution, prioritize privacy, and follow responsible practices to stay safe while exploring this hidden part of the internet.
+
+## Dark OSINT Tools
+
+- Katana
+- OnionSearch 
+- Darkdump
+- DarkSearch
+- Hunchly
+- OnionScan
+
+## Dark Web OSINT Crawlers
+
+- TorBot
+- TorCrawl
+- VigilantOnion
+- OnionIngestor
+- DeepDarkCTI
