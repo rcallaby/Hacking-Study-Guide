@@ -250,6 +250,25 @@ Ultimately, I see disagreements as opportunities to refine my communication skil
 
 ### Can you explain a time when you had to learn a new tool or technology quickly to complete a task?
 
+**"In one engagement, I had to perform a red team assessment that required bypassing advanced endpoint detection and response (EDR) solutions. The client had recently upgraded their security stack, and my usual toolset was getting flagged. I quickly identified that I needed to learn a new framework—Covenant, a .NET-based C2 framework—to execute evasive post-exploitation techniques without being detected.  
+
+Since time was critical, I focused on three key areas:  
+1. **Rapid Familiarization** – I read through the Covenant documentation and community discussions to understand its capabilities, especially in-memory execution and encrypted C2 communications.  
+2. **Lab Testing** – I set up a local test environment with a Windows 10 VM running the same EDR as the client to test payload execution and obfuscation techniques.  
+3. **Operational Adaptation** – I customized Covenant’s launchers and sharpened my use of `Donut` to generate shellcode that evaded static signature detection. I also leveraged `SharpSploit` to perform lateral movement while keeping a low detection footprint.  
+
+Within a few hours, I successfully deployed a foothold on the client’s machine, evaded EDR, and executed the required post-exploitation tasks. This experience reinforced my ability to adapt quickly, learn new tools under pressure, and apply offensive security knowledge dynamically in real-world assessments."**  
+
+Why this response is effective and things you should consider:  
+- **Problem-solving skills** (adapting to a new security control)  
+- **Technical expertise** (learning and applying Covenant, Donut, and SharpSploit)  
+- **A structured approach** (familiarization, testing, and execution)  
+- **Impact** (how the quick learning led to successful task completion) 
+
+Now, this is just an example of what you could say during a interview, the important part is to focus on what can you truthfully demonstrate. Get an answer prepared for this type of question that shows your problem solving skills.
+
+---
+
 ### How do you keep yourself updated with the latest vulnerabilities, tools, and attack techniques?
 
 ### Describe a challenging engagement where you didn’t achieve the expected outcome. How did you handle it?
