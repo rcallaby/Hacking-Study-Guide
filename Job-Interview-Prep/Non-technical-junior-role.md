@@ -271,6 +271,50 @@ Now, this is just an example of what you could say during a interview, the impor
 
 ### How do you keep yourself updated with the latest vulnerabilities, tools, and attack techniques?
 
+Now, with this question you will want to make it customized to your own experiences. The more hands on experience you can demonstrate the better off you will be.   
+
+---
+
+### **1. Follow Reputable Sources**  
+- **Exploit Databases:** I regularly check [Exploit-DB](https://www.exploit-db.com/) and [NVD (National Vulnerability Database)](https://nvd.nist.gov/) for the latest vulnerabilities.  
+- **Security News & Blogs:** I follow blogs like **Krebs on Security, PortSwigger, Rapid7**, and **The Hacker News** to stay informed on trends and real-world attacks.  
+- **Twitter/X & LinkedIn:** Many security researchers and vendors post zero-days and PoCs before official reports. Following experts like **Tavis Ormandy (Google Project Zero)** and **Kevin Beaumont** is invaluable.  
+
+---
+
+### **2. Participate in the Security Community**  
+- **Capture The Flag (CTF) Competitions:** I practice on **Hack The Box, TryHackMe, and CTFtime** to refine my skills and learn new attack techniques.  
+- **Bug Bounty Programs:** Platforms like **HackerOne and Bugcrowd** help me see real-world vulnerabilities, exploitation techniques, and mitigation strategies.  
+- **Security Conferences & Webinars:** I follow **DEF CON, Black Hat, and BSides** (even virtual recordings) to stay updated on cutting-edge research.  
+
+---
+
+### **3. Hands-on Learning & Lab Work**  
+- **Personal Lab:** I set up vulnerable machines using **Metasploitable, VulnHub, and Active Directory labs** to practice attacks in a safe environment.  
+- **New Tools & Frameworks:** I test out new tools on GitHub (like **pwncat, Impacket, and CrackMapExec**) to understand how attackers leverage them in engagements.  
+
+---
+
+### **4. Certifications & Formal Training**  
+- **Offensive Security & SANS Courses:** I review syllabi and take courses like **PNPT (Practical Network Penetration Tester)** and **eJPT (Entry-Level Penetration Tester)** to reinforce my knowledge.  
+- **Web App & Network Security Learning Paths:** I follow OWASP Top 10 and use resources like **PentesterLab and PortSwigger Academy** for practical web security training.  
+
+---
+
+### **5. Automating and Customizing Workflows**  
+- **Scripting & Custom Exploits:** I write small scripts in **Python, Bash, and PowerShell** to automate reconnaissance and exploitation techniques, making me more efficient.  
+- **Monitoring Threat Intelligence Feeds:** I use **Mitre ATT&CK, Twitter OSINT feeds, and RSS aggregators** to track evolving TTPs (Tactics, Techniques, and Procedures).  
+
+---
+
+### **Final Tip for Answering This in an Interview**  
+Don't just list resources you use but make it more personable by doing some of the following:  
+✅ **What you actually use day-to-day**  
+✅ **A recent vulnerability/tool you learned about and applied**  
+✅ **How you validate or test new techniques in a safe environment**  
+
+Of course, these are just suggestions to the question, you will want to pull from your own experiences. If you have actually created a lab or box then this would be another way to stay up to date with new vulnerabilities.
+
 ### Describe a challenging engagement where you didn’t achieve the expected outcome. How did you handle it?
 
 ### How do you manage your workflow during a penetration test to ensure all agreed-upon objectives are met within the allotted time?
