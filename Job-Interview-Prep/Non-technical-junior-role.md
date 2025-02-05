@@ -317,6 +317,24 @@ Of course, these are just suggestions to the question, you will want to pull fro
 
 ### Describe a challenging engagement where you didn’t achieve the expected outcome. How did you handle it?
 
+During a **web application penetration test**, I was tasked with identifying vulnerabilities in a client’s e-commerce platform. The expected outcome was to demonstrate at least **one critical exploit**, such as SQL injection or remote code execution. However, the application had a robust **Web Application Firewall (WAF)** that blocked most automated scanning and even some manual payloads. Additionally, our assessment was **black-box**, meaning we had no access to source code or backend configurations, making it harder to identify vulnerabilities.  
+
+### **How I Handled It:**  
+1. **Pivoted Techniques:** Instead of relying on automated scanners, I switched to **manual testing**, focusing on bypass techniques for the WAF, such as encoding payloads, case manipulation, and leveraging lesser-known HTTP methods.  
+2. **Examined Misconfigurations:** Since direct exploitation was blocked, I shifted my approach to **business logic flaws** and **access control weaknesses**, which are often overlooked by automated tools.  
+3. **Communicated Challenges Early:** Rather than waiting until the final report, I kept the client informed about the WAF’s effectiveness and suggested **alternative testing strategies**, such as a **gray-box** approach (limited access to backend details).  
+4. **Post-Engagement Learning:** After the engagement, I spent time **researching new WAF evasion techniques** and added them to my personal methodology to be better prepared for similar scenarios in the future.  
+
+### **Advice to a Junior Penetration Tester:**  
+- **Don’t rely solely on automated tools.** Manual testing is essential when security defenses block standard techniques.  
+- **Understand defensive mechanisms.** Learning how WAFs, EDRs, and other security tools work will help you develop better evasion strategies.  
+- **Communicate proactively.** If a test isn’t going as expected, update stakeholders and suggest workarounds.  
+- **Always keep learning.** The best testers are those who take every challenge as an opportunity to refine their skills and methodologies.  
+
+Even when an engagement doesn’t produce the expected results, the ability to **adapt, document findings, and learn from the experience** is what defines a strong penetration tester.
+
+Now, the above is just an example of what you could say. Of course, you will want to use your own experience. The idea of this question and example answer is for you to use this as a template to form your own answer.
+
 ### How do you manage your workflow during a penetration test to ensure all agreed-upon objectives are met within the allotted time?
 
 ### What documentation practices do you follow while performing an assessment, and how do you ensure accuracy in your notes?
