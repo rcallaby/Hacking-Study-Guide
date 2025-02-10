@@ -709,5 +709,73 @@ This ensures the script runs automatically at set intervals.
 ---
 
 ## Logs and Monitoring:
-    How do you view system logs on macOS?
-    What is the purpose of Activity Monitor?
+
+### How do you view system logs on macOS?**  
+On macOS, system logs can be viewed using multiple methods, depending on the level of detail required:
+
+#### **a. Using the `log` Command (Unified Logging System)**
+macOS uses the **Unified Logging System (ULS)**, which can be accessed via the Terminal:  
+- **View live logs:**  
+  ```bash
+  log stream
+  ```
+- **Filter logs for specific processes or subsystems:**  
+  ```bash
+  log stream --predicate 'process == "Finder"' --style syslog
+  ```
+- **View logs for a specific time range:**  
+  ```bash
+  log show --start "2024-02-10 10:00:00" --end "2024-02-10 12:00:00"
+  ```
+- **Save logs for analysis:**  
+  ```bash
+  log collect --output ~/Desktop/system_logs.logarchive
+  ```
+
+#### **b. Using Console.app (GUI)**
+- Open **Console.app** (`/Applications/Utilities/Console.app`).
+- View **system.log** under **"Mac Analytics Data"** or search for specific processes.
+- Useful for checking kernel panics, crash reports, and system events.
+
+#### **c. Checking Traditional Log Files**
+Some legacy log files are still accessible in `/var/log/`. Example logs include:
+- **System log:**  
+  ```bash
+  cat /var/log/system.log
+  ```
+- **Kernel logs:**  
+  ```bash
+  cat /var/log/kernel.log
+  ```
+- **Application logs:**  
+  ```bash
+  ls -lh /Library/Logs/ | grep <AppName>
+  ```
+
+### What is the purpose of Activity Monitor?**
+**Activity Monitor** is macOS's built-in system performance and process monitoring tool, similar to Windows Task Manager. It helps in analyzing system resource usage and troubleshooting performance issues.
+
+#### **Key Features of Activity Monitor**
+- **Process Management:**  
+  - View and sort running processes by **CPU, memory, energy, disk, and network usage**.
+  - Force quit unresponsive applications (similar to `kill` command in UNIX).  
+
+- **Resource Monitoring:**  
+  - **CPU Tab** – Shows CPU usage per process and system-wide load.
+  - **Memory Tab** – Displays memory pressure, swap usage, and per-process memory allocation.
+  - **Disk Tab** – Monitors read/write operations.
+  - **Network Tab** – Shows bandwidth consumption.
+
+- **Security & Forensics Usage:**  
+  - Identify **malicious processes** or **crypto miners** running in the background.
+  - Detect **high resource usage** by unknown apps.
+  - Spot **suspicious network activity** (e.g., unexpected high outbound traffic).
+
+- **Real-Time Performance Troubleshooting:**  
+  - Find **apps causing system slowdowns** or **memory leaks**.
+  - Diagnose battery drain issues under the **Energy tab**.
+
+To open Activity Monitor:  
+```bash
+open /Applications/Utilities/Activity\ Monitor.app
+```
