@@ -367,4 +367,161 @@ Now, the above is just an example of what you could say. Of course, you will wan
 
 ### How do you identify and bypass WAF (Web Application Firewall) protections?
 
+For a **junior** role, this question evaluates your understanding of **Web Application Firewalls (WAFs)** and your ability to **identify and bypass** them during an engagement. Here’s how to structure your answer:
+
+---
+
+### **1. Identifying WAF Protections**
+*"During a web application assessment, I first determine whether a WAF is present before attempting any bypass techniques. I use a combination of manual testing and automated tools to identify WAF protections."*
+
+#### **Methods to Detect WAFs**
+- **Fingerprinting WAF Using Online Tools**
+  - `wafw00f` – A tool that detects WAFs based on their responses.
+    ```bash
+    wafw00f https://target.com
+    ```
+  - `WhatWaf` – Another WAF detection tool that identifies WAF providers.
+- **Analyzing HTTP Responses**
+  - Look for WAF-related headers (e.g., `X-Sucuri-ID`, `X-CDN`, `Server: cloudflare`).
+  - Send intentionally malformed requests (e.g., `GET /` with a long payload) and analyze status codes like **403 Forbidden, 406 Not Acceptable, or 503 Service Unavailable**.
+- **Behavioral Testing**
+  - Test **basic SQL injection** or **XSS payloads** to check if responses are blocked or sanitized.
+
+---
+
+### **2. Bypassing WAF Protections**
+*"Once I confirm a WAF is in place, I try various bypass techniques depending on how it filters or inspects requests."*
+
+#### **Bypass Techniques**
+1. **Encoding Payloads**  
+   - **URL Encoding**: `SELECT * FROM users` → `%53%45%4C%45%43%54%20%2A%20%46%52%4F%4D%20%75%73%65%72%73`
+   - **Base64 Encoding**: `SELECT * FROM users` → `U0VMRUNUICogRlJPTSB1c2Vycw==`
+   - **Hex Encoding**: `SELECT * FROM users` → `0x53656C656374202A2046726F6D207573657273`
+   
+2. **Case Manipulation & Comment Injection (SQLi Bypass)**
+   - `"UNION SELECT 1,2,3"` → `"uNioN sElEcT 1,2,3"`
+   - `"SELECT/*foo*/1,2 FROM/*bar*/users"`
+
+3. **Using Alternate HTTP Methods**
+   - If `GET` requests are blocked, try `POST`, `HEAD`, or `TRACE`.
+
+4. **Parameter Pollution**
+   - Instead of `?id=1`, use `?id=1&id=2` or `?id=1%26id=2` to confuse filtering mechanisms.
+
+5. **Using Trusted Hosts & Headers**
+   - Some WAFs allow bypassing when requests come from trusted sources.
+   - Modify `X-Forwarded-For`, `X-Originating-IP`, or `X-Real-IP` headers.
+
+   ```http
+   GET /admin HTTP/1.1
+   Host: target.com
+   X-Forwarded-For: 127.0.0.1
+   ```
+
+---
+
+### **3. Example of a Custom WAF Bypass Script**
+*"During an engagement, I created a Python script to automate WAF bypass attempts by applying encoding techniques and modifying request headers."*
+
+```python
+import requests
+import base64
+
+target_url = "https://target.com/vuln_page.php?id="
+
+# Example payload (SQL Injection)
+payload = "' UNION SELECT 1,2,3 -- "
+
+# Encode payloads
+encoded_payloads = {
+    "Base64": base64.b64encode(payload.encode()).decode(),
+    "URL": requests.utils.quote(payload),
+    "Hex": ''.join(hex(ord(c))[2:] for c in payload)
+}
+
+# Attempt requests with different encodings
+for encoding, encoded_payload in encoded_payloads.items():
+    full_url = f"{target_url}{encoded_payload}"
+    response = requests.get(full_url, headers={"X-Forwarded-For": "127.0.0.1"})
+    
+    print(f"Trying {encoding} encoding: {full_url}")
+    print(f"Response Code: {response.status_code}")
+```
+
+**Purpose:**  
+- Tests multiple encoding techniques to see which payloads bypass WAF filtering.  
+- Uses `X-Forwarded-For` header spoofing to bypass IP-based filtering.  
+
+---
+
+### **Why This Answer Works**
+**Demonstrates WAF Detection Skills** – Uses tools like `wafw00f` and HTTP analysis.  
+**Explains Bypass Techniques Clearly** – Covers encoding, HTTP method switching, and parameter pollution.  
+**Shows Practical Knowledge** – Provides a real-world custom script example.  
+
 ### What scripting languages do you use during engagements, and can you provide an example of a custom script you created?
+
+For a **junior** role, interviewers ask this question to assess your familiarity with scripting languages used during penetration testing and your ability to create or modify scripts to automate tasks. Here’s how you can structure your answer with real-world examples:
+
+---
+
+### **1. Scripting Languages Commonly Used in Penetration Testing**
+*"During engagements, I primarily use scripting languages such as Python, Bash, and PowerShell, depending on the environment and the task at hand."*  
+
+- **Python**: Used for automation, exploit development, and interacting with security tools like `Impacket`, `Scapy`, and `pwntools`.  
+- **Bash**: Useful for quick enumeration, process automation, and remote command execution on Linux systems.  
+- **PowerShell**: Essential for Windows enumeration, privilege escalation, and interacting with Active Directory.  
+
+---
+
+### **2. Example of a Custom Script You Created**
+*"One example of a custom script I created was a Python-based SMB enumeration tool to automate the discovery of shared resources on a network."*  
+
+#### **Custom Python Script Example: SMB Share Enumeration**
+*(Used during internal penetration tests to identify accessible SMB shares)*  
+```python
+import smbclient
+
+smbclient.ClientConfig(username="guest", password="")
+
+def enumerate_shares(target_ip):
+    try:
+        shares = smbclient.list_shares(target_ip)
+        for share in shares:
+            print(f"[+] Found share: {share}")
+    except Exception as e:
+        print(f"[-] Error: {e}")
+
+target = "192.168.1.10"
+enumerate_shares(target)
+```
+**Purpose:**  
+- Enumerates SMB shares without authentication.  
+- Helps identify misconfigured or publicly accessible shares.  
+
+---
+
+### **Alternative Example: PowerShell Script for Windows Enumeration**
+*(If the company focuses on Windows environments, a PowerShell script might be a better example.)*  
+```powershell
+$computers = Get-Content computers.txt
+foreach ($computer in $computers) {
+    Write-Host "Enumerating shares on $computer"
+    Invoke-Command -ComputerName $computer -ScriptBlock {
+        Get-SmbShare | Select-Object Name, Path, Description
+    }
+}
+```
+**Purpose:**  
+- Reads a list of computers and queries available SMB shares.  
+- Automates enumeration across multiple systems in an Active Directory environment.  
+
+---
+
+### **Why This Answer Works**
+**Shows Practical Knowledge** – Uses real-world tools and languages.  
+**Demonstrates Customization** – Shows the ability to create scripts based on engagement needs.  
+**Highlights Adaptability** – Covers Linux (Python/Bash) and Windows (PowerShell).  
+
+#### Future considerations
+This is just a few examples and you will need to provide your own examples, ideally if you have some scripts in a github repository then that is even better. Of course, if you have some CVE's then you will have some scripts or bits of code. The more CVE's that you can find the more likely you will be able to get considered for a future job.
