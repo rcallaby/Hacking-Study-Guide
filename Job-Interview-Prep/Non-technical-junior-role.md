@@ -362,8 +362,45 @@ Now, the above is just an example of what you could say. Of course, you will wan
 ### What are your top three penetration testing tools, and why?
 
 ### Describe a scenario where you used Burp Suite to identify vulnerabilities in a web application.
+**Scenario:**  
+During a personal lab setup, I tested a deliberately vulnerable web application using Burp Suite to identify security weaknesses. My goal was to practice common web application vulnerabilities, such as SQL injection and cross-site scripting (XSS).  
+
+**Approach:**  
+1. **Intercepting Requests:** I configured Burp Suite as a proxy and intercepted HTTP requests between my browser and the web application.  
+2. **Analyzing Parameters:** While browsing the site, I noticed a login form and used Burp Suite’s **Proxy** and **Repeater** to analyze how the application processed user input.  
+3. **Testing for SQL Injection:** By modifying the login parameters with SQL payloads (e.g., `admin' OR '1'='1`), I observed different responses, indicating a possible SQL injection vulnerability.  
+4. **Automating the Attack:** I then used Burp Suite’s **Intruder** to automate payload testing, confirming that injecting malicious SQL statements could bypass authentication.  
+5. **Validating XSS:** Switching focus to input fields, I tested for XSS vulnerabilities by injecting `<script>alert("XSS")</script>` into form fields. The payload executed in the browser, confirming improper input sanitization.  
+
+**Findings and Mitigation Recommendations:**  
+After identifying these vulnerabilities, I documented my findings, including request/response details and remediation steps such as implementing prepared statements for SQL queries and proper input validation/sanitization to prevent XSS.  
+
+**Outcome:**  
+This hands-on experience reinforced my understanding of web application vulnerabilities and how to use Burp Suite effectively for real-world penetration testing scenarios.  
+Now of course, you will need to modify the answer a bit to make it a bit more personable and realistic to your actual experiences if you have any experience what so ever.
 
 ### What is the difference between active and passive reconnaissance? Provide examples of tools you would use for both.
+
+Reconnaissance is the initial phase of a penetration test where information about the target is gathered. It can be categorized into **active** and **passive** reconnaissance:  
+
+1. **Passive Reconnaissance** – Involves gathering information about the target without directly interacting with it. The goal is to avoid detection while collecting data from publicly available sources.  
+   - **Example:** Searching for subdomains using **OSINT (Open-Source Intelligence) tools** or analyzing metadata from documents found online.  
+   - **Tools Used:**  
+     - **Shodan** – Scans the internet for exposed services and devices.  
+     - **theHarvester** – Gathers emails, subdomains, and other information from public sources.  
+     - **Google Dorking** – Uses advanced Google search queries to find sensitive data.  
+     - **WHOIS Lookup** – Retrieves domain registration details.  
+
+2. **Active Reconnaissance** – Involves directly interacting with the target system to gather information. This method is more intrusive and may trigger security alerts.  
+   - **Example:** Scanning a web server for open ports and services using **network scanning tools**.  
+   - **Tools Used:**  
+     - **Nmap** – Performs port scanning, service enumeration, and OS detection.  
+     - **Burp Suite** – Intercepts and manipulates web requests for testing vulnerabilities.  
+     - **Nikto** – Scans web servers for misconfigurations and vulnerabilities.  
+     - **Gobuster/Dirb** – Performs directory and file brute-force enumeration on web servers.  
+
+### Conclusion
+Passive reconnaissance is stealthier and used for initial information gathering, while active reconnaissance is more direct but riskier as it may alert the target. A skilled penetration tester balances both techniques to efficiently map the attack surface before proceeding with exploitation.  
 
 ### How do you identify and bypass WAF (Web Application Firewall) protections?
 
