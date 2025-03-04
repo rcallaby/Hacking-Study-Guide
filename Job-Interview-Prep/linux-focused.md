@@ -467,15 +467,242 @@ You can list all running processes using several commands, depending on the leve
 3. **Scenario-Based Questions:**
    - Be ready to answer hypothetical questions, such as how to stop a runaway process or investigate a suspicious service running on an open port.
 
-By mastering these questions and answers, you'll be well-prepared to handle technical interview questions related to processes and services.
+## Networking:
 
-Networking:
-    What commands would you use to check open ports and active network connections?
-    How do you configure a static IP on a Linux machine?
+Now, these are just some of the questions that you may encounter. Of course, you will need to study more than these questions but these types of questions is something you can expect. This should give you an idea of what to expect though.
 
-Security:
-    How do you harden an SSH server?
-    What is SELinux/AppArmor, and how do they enhance Linux security?
+### 1. **What commands would you use to check open ports and active network connections?**
+To check open ports and active network connections on a Linux machine, I would use the following commands:
+
+- **`netstat`** (deprecated in many distributions, but still common):
+    ```bash
+    netstat -tuln   # List all listening TCP/UDP ports
+    netstat -anp    # Show active connections with associated processes
+    ```
+
+- **`ss`** (replacement for `netstat`):
+    ```bash
+    ss -tuln        # Show listening TCP/UDP ports
+    ss -tp          # Show active TCP connections with process info
+    ```
+
+- **`lsof`** (list open files, including network connections):
+    ```bash
+    lsof -i         # Show all network connections
+    lsof -i :80     # Show processes using port 80
+    ```
+
+- **`nmap`** (for external port scanning):
+    ```bash
+    nmap -sS localhost     # Stealth scan for open TCP ports
+    nmap -sU localhost     # Scan for open UDP ports
+    ```
+
+- **`ip`** (for active connections on interfaces):
+    ```bash
+    ip a         # Show assigned IP addresses
+    ip route     # Show active routes
+    ```
+
+- **`ifconfig`** (older command, still found in some distros):
+    ```bash
+    ifconfig
+    ```
+
+- **`nc` or **`ncat`** (to manually check if a port is open):
+    ```bash
+    nc -vz 192.168.1.1 22
+    ```
+
+---
+
+### 2. **How do you configure a static IP on a Linux machine?**
+Configuring a static IP address depends on the Linux distribution and network manager in use.
+
+- **On Debian/Ubuntu-based systems using Netplan (modern approach):**
+    1. Edit the Netplan configuration file:
+        ```bash
+        sudo nano /etc/netplan/01-netcfg.yaml
+        ```
+    2. Add the following configuration:
+        ```yaml
+        network:
+          version: 2
+          ethernets:
+            eth0:
+              addresses:
+                - 192.168.1.100/24
+              gateway4: 192.168.1.1
+              nameservers:
+                addresses:
+                  - 8.8.8.8
+                  - 8.8.4.4
+        ```
+
+    3. Apply the changes:
+        ```bash
+        sudo netplan apply
+        ```
+
+---
+
+- **On Red Hat/CentOS-based systems (using NetworkManager):**
+    1. Edit the appropriate interface configuration file:
+        ```bash
+        sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+        ```
+    2. Add or modify the following lines:
+        ```bash
+        BOOTPROTO=none
+        IPADDR=192.168.1.100
+        NETMASK=255.255.255.0
+        GATEWAY=192.168.1.1
+        DNS1=8.8.8.8
+        DNS2=8.8.4.4
+        ONBOOT=yes
+        ```
+    3. Restart the network service:
+        ```bash
+        sudo systemctl restart NetworkManager
+        ```
+
+---
+
+- **Using `nmcli` (command-line interface for NetworkManager):**
+    ```bash
+    nmcli con add type ethernet con-name static-eth0 ifname eth0 ip4 192.168.1.100/24 gw4 192.168.1.1
+    nmcli con up static-eth0
+    ```
+
+---
+
+If you're testing penetration scenarios, you'd likely need to verify these configurations with **`ping`**, **`ip a`**, or **`ifconfig`** after making changes.
+
+## Security:
+
+How you would harden a server or services is something you may encounter when getting a techncial interview. This is just an example of the types of questions and answers you should expect. Of course, you may want to specifically study the technologies mentioned in a job posting or something you may have found onlne that you can confim is a definite question.  
+
+---
+
+### **1. How do you harden an SSH server?**  
+To harden an SSH server (`sshd`), I would apply the following security measures:
+
+#### **Basic Hardening Steps:**
+- **Disable Root Login** (prevents direct root access):  
+  Edit `/etc/ssh/sshd_config`:
+  ```bash
+  PermitRootLogin no
+  ```
+  Then restart SSH:
+  ```bash
+  sudo systemctl restart sshd
+  ```
+
+- **Change the Default SSH Port** (avoids automated scans on port `22`):  
+  ```bash
+  Port 2222  # Replace with a non-standard port
+  ```
+
+- **Allow Only Specific Users or Groups**:  
+  ```bash
+  AllowUsers user1 user2
+  # OR
+  AllowGroups sshusers
+  ```
+
+- **Disable Password Authentication** (force key-based authentication):  
+  ```bash
+  PasswordAuthentication no
+  ```
+
+- **Enable Public Key Authentication** (more secure than passwords):  
+  ```bash
+  PubkeyAuthentication yes
+  ```
+
+- **Use Stronger Encryption Algorithms** (disable weak ciphers & algorithms):  
+  ```bash
+  KexAlgorithms curve25519-sha256,ecdh-sha2-nistp521
+  Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com
+  MACs hmac-sha2-512-etm@openssh.com
+  ```
+
+#### **Advanced Hardening:**
+- **Enable Two-Factor Authentication (2FA)**:  
+  ```bash
+  sudo apt install libpam-google-authenticator
+  ```
+  Configure `/etc/ssh/sshd_config`:
+  ```bash
+  ChallengeResponseAuthentication yes
+  ```
+
+- **Restrict SSH Access by IP Address (if necessary)**:  
+  ```bash
+  sudo nano /etc/hosts.allow
+  sshd: 192.168.1.0/24
+  ```
+
+- **Use Fail2Ban to Prevent Brute Force Attacks**:  
+  ```bash
+  sudo apt install fail2ban
+  ```
+
+- **Enable SSH Logging & Monitoring**:  
+  ```bash
+  sudo journalctl -u sshd --since "1 hour ago"
+  ```
+
+After any modifications, **restart SSH**:
+```bash
+sudo systemctl restart sshd
+```
+---
+
+### **2. What is SELinux/AppArmor, and how do they enhance Linux security?**  
+**SELinux (Security-Enhanced Linux) and AppArmor are Mandatory Access Control (MAC) systems** that enhance Linux security by restricting process actions beyond standard file permissions.
+
+#### **SELinux (Security-Enhanced Linux)**  
+- Developed by the NSA, SELinux applies **label-based access controls** to processes, files, and system objects.
+- It enforces **confined domains** for services (e.g., `httpd_t` for Apache).
+- Uses three modes:
+  ```bash
+  getenforce   # Check SELinux status
+  setenforce 1 # Enforce SELinux
+  setenforce 0 # Set SELinux to permissive mode
+  ```
+
+- **Example: Restricting a service (Apache)**
+  ```bash
+  sudo semanage fcontext -a -t httpd_sys_content_t "/srv/www(/.*)?"
+  sudo restorecon -Rv /srv/www
+  ```
+
+#### **AppArmor (Application Armor)**  
+- AppArmor **profiles applications** and restricts them using pathname-based rules.
+- More user-friendly than SELinux but less granular.
+- Managed using:
+  ```bash
+  sudo aa-status     # Check active AppArmor profiles
+  sudo aa-enforce /etc/apparmor.d/usr.sbin.nginx
+  ```
+
+- **Example: Restricting Nginx**
+  ```bash
+  sudo apparmor_parser -r /etc/apparmor.d/usr.sbin.nginx
+  ```
+
+#### **Comparison (SELinux vs. AppArmor)**
+| Feature         | SELinux | AppArmor |
+|---------------|---------|---------|
+| Enforcement Type | Label-based | Path-based |
+| Complexity | High | Lower |
+| Granularity | High | Medium |
+| Used By | RHEL, Fedora, CentOS | Ubuntu, Debian, SUSE |
+
+Both **SELinux and AppArmor** prevent unauthorized access, **limit lateral movement**, and **reduce attack surfaces** by confining processes.
+
+---
 
 Logs and Monitoring:
     How would you analyze logs in /var/log/ for potential issues?
