@@ -782,5 +782,50 @@ As a penetration tester, it’s important to understand the capabilities and lim
 
 
 ## Event Logs:
-    Where are Windows Event Logs stored?
-    How do you filter Event Viewer logs for a specific time range?
+
+#### **Where are Windows Event Logs stored?**  
+Windows Event Logs are stored as `.evtx` files in the following directory:  
+**`C:\Windows\System32\winevt\Logs\`**  
+
+Each log file corresponds to different event categories, such as:  
+- **Application logs:** `Application.evtx`  
+- **Security logs:** `Security.evtx`  
+- **System logs:** `System.evtx`  
+- **PowerShell logs:** `Microsoft-Windows-PowerShell/Operational.evtx`  
+
+---
+
+#### **How do you filter Event Viewer logs for a specific time range?**  
+You can filter Event Viewer logs by time range using the following methods:
+
+##### **Method 1: Using the Event Viewer GUI**
+1. Open **Event Viewer** (`eventvwr.msc`).
+2. Navigate to the desired log under **Windows Logs** or **Applications and Services Logs**.
+3. Click **Filter Current Log** in the right-hand panel.
+4. In the **Filter Current Log** window, go to the **Logged** dropdown.
+5. Choose a predefined range (e.g., Last Hour, Last 24 Hours) or select **Custom range** to specify a **Start** and **End** date/time.
+6. Click **OK** to apply the filter.
+
+##### **Method 2: Using PowerShell**  
+You can filter event logs for a specific time range using the `Get-WinEvent` cmdlet:
+
+```powershell
+Get-WinEvent -LogName Security -FilterXPath "*[System[TimeCreated[timediff(@SystemTime) <= 86400000]]]"
+```
+- This example retrieves logs from the **Security** log within the last **24 hours** (86,400,000 milliseconds).  
+- To filter logs between specific timestamps:
+
+```powershell
+Get-WinEvent -LogName Security | Where-Object { $_.TimeCreated -ge (Get-Date "2024-03-30 10:00:00") -and $_.TimeCreated -le (Get-Date "2024-03-30 12:00:00") }
+```
+- This retrieves events from **March 30, 2024, between 10:00 AM and 12:00 PM**.
+
+##### **Method 3: Using `wevtutil` (Command Line)**  
+You can use `wevtutil` to query event logs for a specific time range:
+
+```cmd
+wevtutil qe Security /q:"*[System[TimeCreated[@SystemTime>='2024-03-30T10:00:00.000Z' and @SystemTime<='2024-03-30T12:00:00.000Z']]]"
+```
+- Replace the timestamps with the desired date and time.
+
+These methods ensure accurate log filtering when analyzing events for incident response or forensic investigations.
