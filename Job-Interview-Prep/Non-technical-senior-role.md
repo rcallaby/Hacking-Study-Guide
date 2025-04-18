@@ -1,7 +1,5 @@
 # Non-technical questions for a Senior Penetration Tester role
 
-## Non-Technical/Organizational Questions (Especially for Senior Roles)
-
 ### How do you mentor junior penetration testers and help them grow in their careers?
 
 Here’s how you can craft strong answers to the question on mentoring junior penetration testers, tailored for a Senior Penetration Tester role:
@@ -593,6 +591,30 @@ For a senior penetration testing role, demonstrating expertise in managing post-
 
 This structured approach ensures not just successful vulnerability mitigation but also long-term value and trust with clients, critical for senior-level penetration testers.
 ### When managing a team, how do you track individual progress to ensure all team members contribute effectively to the project?
+As a senior penetration tester managing a team, tracking individual progress is essential for ensuring project success and maintaining accountability. My approach includes the following structured and transparent methods:
+
+1. **Clearly Defined Roles and Deliverables**  
+   At the project outset, I ensure each team member has a clear understanding of their responsibilities, objectives, timelines, and expected deliverables. This is often documented in a task tracker or project management tool (e.g., Jira, Trello, or GitLab Issues), with clear assignment and deadlines.
+
+2. **Use of Agile or Kanban Boards**  
+   I commonly implement Agile or Kanban methodologies to manage workload distribution and track progress. Each team member’s tasks are broken down into actionable items (e.g., reconnaissance, vulnerability assessment, exploitation, reporting), and progress is tracked through status updates (To Do, In Progress, In Review, Done).
+
+3. **Daily or Regular Stand-Ups**  
+   I hold short, focused stand-up meetings (daily or biweekly depending on the project’s pace) to allow each member to share what they’ve completed, what they’re working on, and any blockers they’re facing. This encourages transparency and helps in early identification of bottlenecks or imbalances in workload.
+
+4. **Milestone Reviews and Checkpoints**  
+   I schedule internal checkpoints aligned with project milestones to validate progress. This could include evidence of access, partial exploit chains, documentation drafts, or scripts developed. It ensures work is progressing toward the final deliverable and provides an opportunity to reassign resources if someone is lagging behind.
+
+5. **Version Control and Activity Logs**  
+   All scripts, findings, and reports are maintained in version-controlled repositories (e.g., Git). I review commit histories, branch activity, and merge requests to gauge ongoing contributions.
+
+6. **One-on-One Syncs and Feedback**  
+   Periodically, I conduct individual check-ins to discuss progress, provide feedback, address personal challenges, and align on expectations. This helps support each team member’s growth and keeps morale high.
+
+7. **Metrics and Reporting**  
+   I use KPIs such as task completion rate, vulnerability coverage, reporting quality, and adherence to timelines to evaluate individual contributions. This data is used not only to track performance but also to support continuous improvement.
+
+Ultimately, the goal is to foster a collaborative environment with accountability built into the workflow. By combining structured tracking with interpersonal communication, I ensure every team member contributes effectively to the engagement and develops professionally through each project.
 
 ### What processes do you follow to ensure your findings are clear, actionable, and mapped to business risk?
 
