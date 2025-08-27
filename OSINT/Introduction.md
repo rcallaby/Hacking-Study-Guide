@@ -56,6 +56,7 @@ OSINT is a valuable tool for any penetration tester as it provides them with val
 - [Password OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Password%20OSINT/passwordosint.md)
 - [Phone OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Phone%20OSINT/phoneosint.md)
 - [Reddit OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Reddit%20OSINT/redditosint.md)
+- [Shodan Dorks](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Shodan-Dorks/shodan-dorks.md)
 - [SnapChat OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/SnapChat%20OSINT/snapchatosint.md)
 - [TikTok OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/TikTok%20OSINT/tiktokosint.md)
 - [Twitter (X) OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Twitter%20OSINT/twitterosint.md)
