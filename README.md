@@ -7,6 +7,7 @@ This is my hacking study guide. It is meant to be a general study guide for cert
 Currently, this covers Windows Escalation, Linux Escalation, and Bug Bounty as part of an ethical test of security. All of these aspects are very important. In the future, I may add additional sections such as those that cover Wi-fi and what ever else may come up in the realm of cybersecurity.
 
 I will be adding to this resource on a **semi-regular** basis.
+
 ## Compelling Reasons to Learn Ethical Hacking and Penetration Testing
 
 Ethical hacking and penetration testing are essential components of the modern digital landscape. The exponential growth of the internet and interconnected technologies has brought numerous benefits, but has also made it easier for malicious actors to steal personal and sensitive data. As a result, organizations and individuals must be proactive in ensuring the security of their systems and data. Studying ethical hacking and penetration testing can provide individuals with the skills to understand how hackers operate and how to detect, prevent and remediate vulnerabilities.
@@ -21,12 +22,13 @@ Ethical hacking and penetration testing are essential disciplines for anyone int
 
 ### Table of Contents
 1. [Bug Bounty Notes](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Bug-Bounty/Introduction.md)
-2. [HTB Walkthroughs](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/HTB-Walkthroughs/introduction.md)
-3. [Checklists](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/introduction.md)
-4. [Linux Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Linux-Privilege-Escalation/Introduction.md) 
-5. [OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Introduction.md)
-6. [Ports](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Ports/ports.md)
-7. [Report Outlines](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Report-Outlines/Introduction.md)
-8. [Reverse Shells](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/Introduction.md)
-9. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
-10. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows-Privilege-Escalation/Introduction.md)
+2. [Checklists](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/checklists/introduction.md)
+3. [Linux Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Linux-Privilege-Escalation/Introduction.md) 
+4. [OSINT](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/OSINT/Introduction.md)
+5. [Ports](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Ports/ports.md)
+6. [Report Outlines](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Report-Outlines/Introduction.md)
+7. [Reverse Shells](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/Introduction.md)
+8. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
+9. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows-Privilege-Escalation/Introduction.md)
+10. [CTF]()
+11. [Job Interview Prep]()
