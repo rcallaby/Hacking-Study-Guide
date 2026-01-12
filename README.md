@@ -30,5 +30,5 @@ Ethical hacking and penetration testing are essential disciplines for anyone int
 7. [Reverse Shells](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Reverse-Shells/Introduction.md)
 8. [Tools](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Introduction.md)
 9. [Windows Privilege Escalation](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Windows-Privilege-Escalation/Introduction.md)
-10. [CTF]()
-11. [Job Interview Prep]()
+10. [CTF](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/CTF/Introduction.md)
+11. [Job Interview Prep](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Job-Interview-Prep/Introduction.md)
