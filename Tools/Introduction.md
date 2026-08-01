@@ -1,3 +1,4 @@
+- [Dark-Moon](https://github.com/ASCIT31/Dark-Moon): open source (GPL-3.0) autonomous AI pentest platform, self-hosted, to train safely on legal labs (OWASP Juice Shop, DVWA, kubernetes-goat, Hack The Box); covers web, API, Active Directory and Kubernetes.
 # Tools
 
 This is a directory containing notes, tutorials, and other pertinent items related to the various tools used to perform various penetration tests
