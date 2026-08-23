@@ -23,7 +23,7 @@ Open Source Intelligence (OSINT) in news and media refers to the collection, ana
 - **Metadata Analysis**: Extract metadata from files like images and videos to determine their origin, creation date, and modifications.
   - **ExifTool** ([https://exiftool.org/](https://exiftool.org/))
   - **Jeffrey's Image Metadata Viewer** ([https://exif.regex.info/exif.cgi](https://exif.regex.info/exif.cgi))
-  - **Metadata Remover Viewer** ([https://metadataremover.ai/metadata-viewer](https://metadataremover.ai/metadata-viewer)): Inspect EXIF, GPS, XMP, and IPTC locally in the browser; files remain in the browser.
+  - **Metadata Remover Viewer** ([tool](https://metadataremover.ai/metadata-viewer); [usage guide](../../Tools/Metadata%20Remover/metadata-remover-viewer.md)): Inspect EXIF, GPS, XMP, and IPTC locally in the browser; files remain in the browser.
   - Metadata may be missing, stripped, edited, or forged; corroborate findings with provenance and content/context.
 
 - **Video Verification**: Analyze video authenticity by extracting frames or identifying anomalies.
