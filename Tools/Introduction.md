@@ -32,6 +32,7 @@ This is a directory containing notes, tutorials, and other pertinent items relat
 - [Maltego](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Maltego/maltego.md)
 - [medusa](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/medusa/medusa.md)
 - [merlin](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/merlin/merlin.md)
+- [Metadata Remover Viewer](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Metadata%20Remover/metadata-remover-viewer.md)
 - [MetaSploit](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/MetaSploit/MetaSploit.md)
 - [Nessus](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Nessus/Nessus.md)
 - [Netcat](https://github.com/rcallaby/Hacking-Study-Guide/blob/main/Tools/Netcat/netcat.md)
