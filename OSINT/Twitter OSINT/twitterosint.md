@@ -16,7 +16,7 @@ Twint - Twint is an advanced Twitter scraping tool that allows penetration teste
 
 Followerwonk - Followerwonk is a Twitter analytics tool that can be used to analyze Twitter followers. It can be used to gather information such as the number of followers, location, and activity.
 
-Tweepi - Tweepi is a Twitter management tool that can be used to analyze and manage Twitter accounts. It can be used to gather information such as followers, following, and activity.
+twtData - twtData keeps a free archive of X/Twitter trending topics by day for each country and city (https://twtdata.com/twitter-trends/), useful for dating when a name or hashtag started trending. It also offers paid CSV exports of the follower and following lists of public accounts.
 
 TweetDeck - TweetDeck is a Twitter management tool that can be used to manage multiple Twitter accounts. It can be used to gather information such as tweets, mentions, and messages.
 
