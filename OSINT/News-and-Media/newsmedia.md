@@ -40,7 +40,7 @@ Social media platforms are rich sources for breaking news, eyewitness accounts, 
   - **Hashtagify** ([https://hashtagify.me/](https://hashtagify.me/)): Analyze trending hashtags.
 
 - **Platform-Specific Tools**:
-  - **CrowdTangle** ([https://www.crowdtangle.com/](https://www.crowdtangle.com/)): Analyze engagement across Facebook, Instagram, and Reddit.
+  - **IGDataHub** ([https://igdatahub.com/](https://igdatahub.com/)): Track follower history of public Instagram accounts (free reports; CSV export is paid).
   - **Social Blade** ([https://socialblade.com/](https://socialblade.com/)): Track social media account metrics.
 
 - **Cross-Platform Monitoring**:
