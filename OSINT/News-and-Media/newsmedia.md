@@ -37,7 +37,7 @@ Social media platforms are rich sources for breaking news, eyewitness accounts, 
 - **Hashtag and Keyword Tracking**:
   - **TweetDeck** ([https://tweetdeck.twitter.com/](https://tweetdeck.twitter.com/)): Monitor Twitter in real-time.
   - **Twint** ([https://github.com/twintproject/twint](https://github.com/twintproject/twint)): Scrape Twitter without an API key.
-  - **Hashtagify** ([https://hashtagify.me/](https://hashtagify.me/)): Analyze trending hashtags.
+  - **twtData X Trends Archive** ([https://twtdata.com/twitter-trends/](https://twtdata.com/twitter-trends/)): Look up past X (Twitter) trending topics and hashtags by country and date.
 
 - **Platform-Specific Tools**:
   - **CrowdTangle** ([https://www.crowdtangle.com/](https://www.crowdtangle.com/)): Analyze engagement across Facebook, Instagram, and Reddit.
