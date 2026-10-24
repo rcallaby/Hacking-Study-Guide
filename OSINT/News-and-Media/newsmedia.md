@@ -40,7 +40,7 @@ Social media platforms are rich sources for breaking news, eyewitness accounts, 
   - **twtData X Trends Archive** ([https://twtdata.com/twitter-trends/](https://twtdata.com/twitter-trends/)): Look up past X (Twitter) trending topics and hashtags by country and date.
 
 - **Platform-Specific Tools**:
-  - **CrowdTangle** ([https://www.crowdtangle.com/](https://www.crowdtangle.com/)): Analyze engagement across Facebook, Instagram, and Reddit.
+  - **IGDataHub** ([https://igdatahub.com/](https://igdatahub.com/)): Track follower history of public Instagram accounts (free reports; CSV export is paid).
   - **Social Blade** ([https://socialblade.com/](https://socialblade.com/)): Track social media account metrics.
 
 - **Cross-Platform Monitoring**:
