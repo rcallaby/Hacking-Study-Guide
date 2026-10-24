@@ -28,7 +28,7 @@ SnapMap: SnapMap is a feature in Snapchat that allows users to see the location 
 
 Snapdex: Snapdex is a directory of Snapchat usernames that can be used to find a user's username.
 
-GhostCodes: GhostCodes is a directory of Snapchat users categorized by interests. It can be used to find potential targets for social engineering attacks.
+SnapDataHub (https://snapdatahub.com/): SnapDataHub shows public stats for Snapchat creator accounts (subscribers, Spotlight) and has a creator search by niche and country. It can be used to look up public creator profiles. (GhostCodes, previously listed here, has been offline since early 2025.)
 
 Snaptool: Snaptool is a tool that allows users to view and download Snapchat stories anonymously. It can be used to gather information about the target's behavior on the platform.
 
