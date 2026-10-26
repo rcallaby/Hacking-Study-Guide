@@ -7,8 +7,6 @@
 - [ ] Determine tools and data sources
 - [ ] Document hypotheses and initial assumptions
 
----
-
 ## Identity & People Search Checklist
 - [ ] Check official government directories (federal, state, local)
 - [ ] Search public employee databases
@@ -16,8 +14,6 @@
 - [ ] Look for published papers, reports, or testimony
 - [ ] Cross-reference with voter registration data (where legal)
 - [ ] Review campaign contributions databases
-
----
 
 ## Organization & Agency Research Checklist
 - [ ] Identify relevant agencies/departments
