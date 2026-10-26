@@ -119,6 +119,4 @@ Social media platforms are rich sources for breaking news, eyewitness accounts, 
 - **Bellingcat’s Online Workshops** ([https://www.bellingcat.com/](https://www.bellingcat.com/)): Advanced OSINT techniques.
 - **SANS Open-Source Intelligence Summit** ([https://www.sans.org/cyber-security-training-events/](https://www.sans.org/cyber-security-training-events/)): Training focused on OSINT.
 
----
-
 This overview provides a strong foundation for conducting OSINT investigations in news and media, equipping you with the necessary tools, techniques, and resources to navigate this complex field effectively.
