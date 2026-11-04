@@ -29,4 +29,6 @@ OSINT Framework: This is an open-source framework that can be used for OSINT inv
 
 Maltego: This is a data visualization tool that can be used to visualize data collected during TikTok OSINT investigations. It can be used to identify patterns, connections, and other useful information.
 
+TKMetrics: This is a web tool that shows public TikTok creator stats, including follower counts, engagement rates, video performance and hashtag trends. See https://tkmetrics.com/
+
 TikTok OSINT can be a valuable tool for penetration testers, marketers, and other professionals who need to gather information from the TikTok social media platform. By following the steps outlined above and using the right tools, you can collect and analyze data that can be used to inform decision-making and improve social media strategies.
